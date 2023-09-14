@@ -35,6 +35,22 @@ footer {
     background: red;
 }
 
+.footer-content{
+    display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+.footer-content > section{
+    border: solid 1px black;
+    width: 300px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
 
 /* Tablet */
 /*@media (min-width: 800px) {
