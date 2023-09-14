@@ -1,1 +1,54 @@
+/* Variables */
+/*:root {
+    TODO
+}*/
+
+
 /* General styles */
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh; /* make sure footer is always at the even if the page is less than screen height */
+
+    display: grid;
+    grid-template: 5rem 1fr 10rem / 1fr;
+    grid-template-areas:
+        "generalheader"
+        "generalcontent"
+        "generalfooter"
+    ;
+}
+
+header {
+    grid-area: generalheader;
+    background: darkturquoise;
+}
+
+main {
+    grid-area: generalcontent;
+    background: beige;
+}
+
+footer {
+    grid-area: generalfooter;
+    background: darkcyan;
+}
+
+.maxwidth {
+    max-width: 1000px; /* TODO: Adjust max-width */
+    margin-left: auto;
+    margin-right: auto;
+    background: red;
+}
+
+
+/* Tablet */
+/*@media (min-width: 800px) {
+    TODO
+}*/
+
+
+/* Desktop */
+/*@media (min-width: TODO) {
+    TODO
+}*/
