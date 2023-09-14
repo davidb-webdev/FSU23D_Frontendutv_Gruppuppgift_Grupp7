@@ -71,8 +71,8 @@ main {
 
 footer {
     grid-area: generalfooter;
-    background: darkcyan;
-    display: ;
+    background: navy;
+    
 }
 
 .maxwidth {
@@ -82,46 +82,47 @@ footer {
     background: red;
 }
 
-.footer-content{
+.footer-content {
+    background-color: navy;
+    color: white;
     display: flex;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	align-items: center;
-}
-.footer-content > section{
-    border: solid 1px black;
-    width: 300px;
+    flex-wrap: wrap;
+    
+    
+    
+
 }
 
-.copyright{
-    display: flex;
-    justify-content: center;
-}
-
-
-.footer-content{
-    display: flex;
-	/* flex-flow: row wrap;
-     */
-	justify-content: space-around;
-	align-items: center;
-}
 .footer-content > section{
     border: solid 1px black;
     width: 100%;
+    
 }
 
 .copyright{
     display: flex;
     justify-content: center;
+
 }
 
 
+ 
+
 /* Tablet */
  @media (min-width: 800px) {
+    .footer-content {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction:row-reverse;
+        
+
+    }
+
+    .copyright {
+        flex-wrap: nowrap;
+    }
     
-
-
+ }
 /* Desktop */
 /*@media (min-width: TODO) {
     TODO
