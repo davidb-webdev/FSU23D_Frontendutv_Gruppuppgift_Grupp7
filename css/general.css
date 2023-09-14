@@ -52,10 +52,27 @@ footer {
 }
 
 
+.footer-content{
+    display: flex;
+	/* flex-flow: row wrap;
+     */
+	justify-content: space-around;
+	align-items: center;
+}
+.footer-content > section{
+    border: solid 1px black;
+    width: 100%;
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+}
+
+
 /* Tablet */
-/*@media (min-width: 800px) {
-    TODO
-}*/
+ @media (min-width: 800px) {
+    
 
 
 /* Desktop */
