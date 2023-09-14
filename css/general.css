@@ -71,7 +71,8 @@ main {
 
 footer {
     grid-area: generalfooter;
-    background: darkcyan;
+    background: navy;
+    
 }
 
 .maxwidth {
@@ -82,14 +83,20 @@ footer {
 }
 
 .footer-content {
+    background-color: navy;
+    color: white;
     display: flex;
     flex-wrap: wrap;
+    
+    
+    
 
 }
 
 .footer-content > section{
     border: solid 1px black;
     width: 100%;
+    
 }
 
 .copyright{
@@ -97,6 +104,7 @@ footer {
     justify-content: center;
 
 }
+
 
  
 
@@ -106,7 +114,12 @@ footer {
         display: flex;
         flex-wrap: nowrap;
         flex-direction:row-reverse;
+        
 
+    }
+
+    .copyright {
+        flex-wrap: nowrap;
     }
     
  }
