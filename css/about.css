@@ -262,7 +262,7 @@ hr {
  .ab-showcase-img {
    width: 100%;
    min-height: 500px;
-   background: url("") no-repeat center center;
+   background: url("/img/dogpic-new.jpg") no-repeat center center;
    background-size: cover;
    border-radius: 5px;
    }
