@@ -145,6 +145,7 @@ footer {
  @media (min-width: 820px) {
     .donate-btn {
         display: inline;
+        border: 2px solid #0d4249;
         background-color: #ff735a;
         font-family: quicksand;
         font-size: 20px;
