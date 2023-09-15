@@ -11,7 +11,7 @@ body {
     min-height: 100vh; /* make sure footer is always at the bottom */
 
     display: grid;
-    grid-template: 5rem 1fr 10rem / 1fr;
+    grid-template: 6rem 1fr 10rem / 1fr;
     grid-template-areas:
         "generalheader"
         "generalcontent"
@@ -27,6 +27,7 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    height: 6rem;
 }
 
 #logoimg {
@@ -61,7 +62,7 @@ header {
 .dropdown-content {
     display: none;
     position: absolute;
-    top: 80px;
+    top: 85px;
     background-color: #50a5c7;
     min-width: 100vw;
     right: 0px;
