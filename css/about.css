@@ -234,3 +234,40 @@ hr {
     }
 }
 
+/* about page */
+/* about page showcase */
+#ab-showcase {
+  display: block;
+  margin: auto;
+  max-width: 1000px; 
+ }
+ 
+ .about-h2 {
+   font-size: 1.8rem;
+   text-align: center;
+   margin-bottom:0.5%;
+   color: #50a5c7;
+   font-weight: bold;
+ }
+ .about-h3{
+   font-size: 1.5rem;
+   text-align: center;
+   margin-top: 0;
+ }
+ 
+ .about-text {
+   margin: 10px;
+ }
+ 
+ .ab-showcase-img {
+   width: 100%;
+   min-height: 500px;
+   background: url("") no-repeat center center;
+   background-size: cover;
+   border-radius: 5px;
+   }
+ 
+   
+ 
+ 
+
