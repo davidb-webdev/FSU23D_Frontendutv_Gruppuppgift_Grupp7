@@ -86,7 +86,6 @@ background-color: #50a5c7;
 
 main {
     grid-area: generalcontent;
-    background: beige;
 }
 
 footer {
@@ -99,7 +98,6 @@ footer {
     max-width: 1000px; /* TODO: Adjust max-width */
     margin-left: auto;
     margin-right: auto;
-    background: red;
 }
 
 .footer-content {
