@@ -109,7 +109,7 @@ footer {
     width: 100%;
 }
 
-.footer-content > section p:last-child {
+.footer-content > section :last-child {
     margin-bottom: 0;
 }
 
