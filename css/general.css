@@ -154,7 +154,7 @@ hr {
  
 
 /* Tablet */
- @media (min-width: 820px) {
+ @media (min-width: 768px) {
     .donate-btn {
         display: inline;
         border: 2px solid #0d4249;
@@ -177,7 +177,7 @@ hr {
  }
 
  /* Desktop */
-@media (min-width: 1280px) {
+@media (min-width: 992px) {
     .dropdown {
         display: none;
     }
