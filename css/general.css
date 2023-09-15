@@ -84,7 +84,7 @@ main {
 
 footer {
     grid-area: generalfooter;
-    background: navy;
+    background-color:#50a5c7;
     
 }
 
@@ -97,9 +97,8 @@ footer {
 
 .footer-content {
     font-family: quicksand;
-    background-color: navy;
-    color: white;
-    display: flex;
+    background-color:#50a5c7;
+    color: #0d4249;
     flex-wrap: wrap;
     text-align: center;
     margin-top: 5px;
@@ -107,7 +106,7 @@ footer {
 }
 
 .footer-content > section{
-    border: solid 1px black;
+    
     width: 100%;
     
 }
@@ -115,20 +114,20 @@ footer {
 .copyright{
     display: flex;
     justify-content: center;
-    background-color: navy;
-    color: white;
+    background-color:#50a5c7;
+    color: #0d4249;
     font-family: quicksand;
 
 }
 
 .icons i{
-    color: white;
+    color: #0d4249;
     margin:30px;
     margin-bottom: 25px;
 }
 
 .footer-logo {
-    background-color: navy;
+    background-color:#50a5c7;
 }
 .footer-logo img {
     max-width: 200px;
