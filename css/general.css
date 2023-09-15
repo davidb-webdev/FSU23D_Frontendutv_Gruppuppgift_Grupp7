@@ -2,7 +2,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-height: 100vh; /* make sure footer is always at the even if the page is less than screen height */
+    min-height: 100vh; /* make sure footer is always at the bottom */
 
     display: grid;
     grid-template: 5rem 1fr 10rem / 1fr;
@@ -43,15 +43,16 @@ header {
     cursor: pointer;
   }
   
-  .dropdown {
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
+}
 
-  .dropdown-content {
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     top: 80px;
@@ -60,22 +61,22 @@ header {
     right: 0px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: black;
     padding: 12px 35px;
     text-decoration: none;
     display: block;
     font-family: Quicksand;
     font-weight: bold;
-  }
+}
 
-  .dropdown-content a:hover {background-color: #f3f1ec}
+.dropdown-content a:hover {background-color: #f3f1ec}
 
-  .dropdown:hover .dropdown-btn {
-    background-color: #50a5c7;
-  }
+.dropdown:hover .dropdown-btn {
+background-color: #50a5c7;
+}
 
 main {
     grid-area: generalcontent;
@@ -102,7 +103,6 @@ footer {
     flex-wrap: wrap;
     text-align: center;
     margin-top: 5px;
-
 }
 
 .footer-content > section {
@@ -119,18 +119,14 @@ footer {
     background-color:#50a5c7;
     color: #0d4249;
     font-family: quicksand;
-
 }
 
-.icons i{
-    
+.icons i {
     color: #0d4249;
     margin:30px;
     margin-bottom: 25px;
     font-size: 40px;
 }
-
-
 
 .footer-logo {
     background-color:#50a5c7;
@@ -141,7 +137,6 @@ footer {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 hr {
@@ -151,7 +146,7 @@ hr {
 }
 
 
- 
+
 
 /* Tablet */
  @media (min-width: 768px) {
@@ -175,8 +170,7 @@ hr {
         flex-direction:row-reverse;
     } 
 
-    .icons i{
-    
+    .icons i {
         color: #0d4249;
         margin:20px;
         margin-bottom: 25px;
@@ -184,7 +178,10 @@ hr {
     }
  }
 
- /* Desktop */
+
+
+
+/* Desktop */
 @media (min-width: 992px) {
     .dropdown {
         display: none;
@@ -214,6 +211,7 @@ hr {
         padding: 10px 15px;
         text-decoration: none;
     }
+    
     .header-navbar-item a:hover {
         background-color: #0f5e70;
         color: #f3f1ec;
