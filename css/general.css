@@ -111,6 +111,8 @@ footer {
 
 .footer-content > section {
     width: 100%;
+    border-bottom: 1px solid #0d4249;
+    padding: 1rem 0 2rem;
 }
 
 .footer-content > section :last-child {
@@ -172,7 +174,11 @@ hr {
         display: flex;
         flex-wrap: nowrap;
         flex-direction:row-reverse;
-    } 
+    }
+
+    .footer-content > section {
+        border: none;
+    }
 
     .icons i {
         color: #0d4249;
