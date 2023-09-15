@@ -121,10 +121,14 @@ footer {
 }
 
 .icons i{
+    
     color: #0d4249;
     margin:30px;
     margin-bottom: 25px;
+    font-size: 40px;
 }
+
+
 
 .footer-logo {
     background-color:#50a5c7;
@@ -135,6 +139,12 @@ footer {
     margin-left: auto;
     margin-right: auto;
     
+}
+
+hr {
+    height: 1px;
+    background-color: #0d4249;
+    border: none;
 }
 
 
