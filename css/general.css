@@ -83,12 +83,16 @@ footer {
 }
 
 .footer-content {
+    font-family: quicksand;
     background-color: navy;
     color: white;
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
+    margin-top: 5px;
 
 }
+
 
 .footer-content > section{
     border: solid 1px black;
@@ -99,12 +103,28 @@ footer {
 .copyright{
     display: flex;
     justify-content: center;
+    background-color: navy;
+    color: white;
+    font-family: quicksand;
 
 }
 
-.icons i {
+.icons i{
     color: white;
+    margin:30px;
+    margin-bottom: 25px;
+}
 
+
+.footer-logo {
+    background-color: navy;
+}
+.footer-logo img {
+    max-width: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    
 }
 
 
