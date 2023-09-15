@@ -1,0 +1,120 @@
+
+* {
+    box-sizing: border-box;
+  }
+/* CSS for first section of frontpage */
+
+.section-first{
+/* CSS for background image */
+    background-image: url(../img/dog-3344414_1280.jpg);
+    background-color: beige;
+    background-size: cover;
+    width: 100%;
+
+    padding-top: 100px;
+    padding-bottom: 300px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    
+}    
+
+.content-first{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.form-parent{
+    
+    height: 100px;
+    width: 80%;
+}  
+
+.content-second{
+    padding: 50px;
+    width: 100%;
+}
+ 
+.box1,.box2{
+    border: solid 1px black;
+}
+
+.selection-text{
+
+    font-size: 30px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: top;
+
+}
+
+
+.section-sec{
+    background-color: black;
+
+    padding: 50px;
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: top;
+}
+
+.mission-box{
+    color: white;
+}
+
+
+/* CSS for formuläret */
+  
+  /* Style the search field */
+  form input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid black;
+    border-radius: 10px 0px 0px 10px ;
+    float: left;
+    width: 80%;
+    background: whit
+  }
+  
+  /* Style the submit button */
+  form button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #ff735a;
+    color: black;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none; 
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+  }
+  
+  form button:hover {
+    background: #0b7dda;
+  }
+  
+  /* Clear floats */
+  form::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+/* NOTES */
+/* Change so that form takes up less procentage when switching media */
+/* The 80% is based on mobile first */
+
+/* A lot of flx code is written the same and can be but in the same elements to make it less code */
+
+/* Change font-size based of media */
