@@ -99,12 +99,22 @@ footer {
 .copyright{
     display: flex;
     justify-content: center;
+    background-color: navy;
+    color: white;
 
 }
 
 .icons i {
     color: white;
 
+}
+
+.footer-logo {
+    background-color: navy;
+}
+.footer-logo img {
+    max-width: 200px;
+    
 }
 
 
