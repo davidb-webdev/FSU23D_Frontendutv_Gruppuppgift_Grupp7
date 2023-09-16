@@ -1,18 +1,19 @@
 
 * {
     box-sizing: border-box;
+    font-family: quicksand;
   }
 /* CSS for first section of frontpage */
 
 .section-first{
 /* CSS for background image */
-    background-image: url(../img/dog-3344414_1280.jpg);
+    background-image: url(../img/Frontpage-dog-small.jpg);
     background-color: beige;
     background-size: cover;
     width: 100%;
 
     padding-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
 
     display: flex;
     flex-flow: column wrap;
@@ -27,39 +28,32 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-}
-.form-parent{
-    
-    height: 100px;
-    width: 80%;
-}  
+} 
 
 .content-second{
     padding: 50px;
     width: 100%;
 }
- 
-.box1,.box2{
-    border: solid 1px black;
-}
+
 
 .selection-text{
-
+    
     font-size: 30px;
-
+    text-shadow: 2px 2px 8px white;
+    
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: top;
-
+    
 }
 
 
 .section-sec{
     background-color: black;
-
+    
     padding: 50px;
-
+    
     display: flex;
     flex-flow: column wrap;
     align-items: center;
@@ -72,16 +66,20 @@
 
 
 /* CSS for formuläret */
-  
-  /* Style the search field */
-  form input[type=text] {
+.form-parent{
+    
+    height: 100px;
+    width: 80%;}
+
+/* Style the search field */
+form input[type=text] {
     padding: 10px;
     font-size: 17px;
     border: 1px solid black;
     border-radius: 10px 0px 0px 10px ;
     float: left;
     width: 80%;
-    background: whit
+    background: white
   }
   
   /* Style the submit button */
@@ -99,7 +97,7 @@
   }
   
   form button:hover {
-    background: #0b7dda;
+    background: #f3f1ec;
   }
   
   /* Clear floats */
@@ -109,11 +107,89 @@
     display: table;
   }
 
+  /* CSS for boxes (Adult dogs and puppies) */
+
+  .content-third{
+
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    height: 300px;
+    width: 100%
+
+  }
+
+  .box1,.box2{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+    border: solid 3px #50a5c7;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #50a5c7;
+    opacity: .8;
+    margin-left: 25px;
+    margin-right: 25px;
+
+    box-shadow: 4px 6px #999;
+
+    width: 300px;
+    height: 100px;
+}
+.box1:active, .box2:active{
+  box-shadow: 1px 2px #666;
+  transform: translateY(4px);
+}
+
+  /* Media queries */
+  /* Tablet */
+ @media (min-width: 768px){
+    
+    .section-first{
+        background-image: url(../img/Frontpage-dog-medium.jpg);
+
+    }
+
+    .form-parent{
+    
+        height: 100px;
+        width: 70%;
+    }
+ }
+
+
+    /* Desktop */
+    @media (min-width: 992px) {
+ 
+    .section-first{
+        background-image: url(../img/Frontpage-dog-large.jpg);
+    }
+
+    .form-parent{
+    
+        height: 100px;
+        width: 50%;}
+
+    .box1:hover,.box2:hover{
+        background-color:  #f3f1ec
+        }
+
+    .box1,.box2{
+        box-shadow: none;
+    }
+    .box1:active,.box1:active{
+        box-shadow: none;
+    }
+    }
+
+    
 
 
 /* NOTES */
-/* Change so that form takes up less procentage when switching media */
-/* The 80% is based on mobile first */
 
 /* A lot of flx code is written the same and can be but in the same elements to make it less code */
 
