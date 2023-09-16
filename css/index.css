@@ -51,16 +51,6 @@
 }
 
 
-.section-sec{
-    background-color: black;
-    
-    padding: 50px;
-    
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: top;
-}
 
 .mission-box{
     color: white;
@@ -72,79 +62,103 @@
     
     height: 100px;
     width: 80%;}
-
-/* Style the search field */
-form input[type=text] {
-    padding: 10px;
-    font-size: 17px;
-    border: 1px solid black;
-    border-radius: 10px 0px 0px 10px ;
-    float: left;
-    width: 80%;
-    background: white
-  }
-  
-  /* Style the submit button */
-  form button {
-    float: left;
-    width: 20%;
-    padding: 10px;
-    background: var(--btn-colour);
-    color: black;
-    font-size: 17px;
-    border: 1px solid black;
-    border-left: none; 
-    border-radius: 0px 10px 10px 0px;
-    cursor: pointer;
-  }
-  
-  form button:hover {
-    background: var(--hover-colour);
-  }
-  
-  /* Clear floats */
-  form::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-
-  /* CSS for boxes (Adult dogs and puppies) */
-
-  .content-third{
-
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-
-    height: 300px;
-    width: 100%
-
-  }
-
-  .box1,.box2{
-
+    
+    /* Style the search field */
+    form input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid black;
+        border-radius: 10px 0px 0px 10px ;
+        float: left;
+        width: 80%;
+        background: white
+    }
+    
+    /* Style the submit button */
+    form button {
+        float: left;
+        width: 20%;
+        padding: 10px;
+        background: var(--btn-colour);
+        color: black;
+        font-size: 17px;
+        border: 1px solid black;
+        border-left: none; 
+        border-radius: 0px 10px 10px 0px;
+        cursor: pointer;
+    }
+    
+    form button:hover {
+        background: var(--hover-colour);
+    }
+    
+    /* Clear floats */
+    form::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    /* CSS for boxes (Adult dogs and puppies) */
+    
+    .content-third{
+        
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        
+        height: 300px;
+        width: 100%
+        
+    }
+    
+    .box1,.box2{
+        
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-
+    
     border: solid 3px var(--main-colour);
     border-radius: 10px 10px 10px 10px;
     background-color: var(--main-colour);
     opacity: .8;
     margin-left: 25px;
     margin-right: 25px;
-
+    
     box-shadow: 4px 6px #999;
-
+    
     width: 300px;
     height: 100px;
 }
 .box1:active, .box2:active{
-  box-shadow: 1px 2px #666;
-  transform: translateY(4px);
+    box-shadow: 1px 2px #666;
+    transform: translateY(4px);
+}
+
+/* Css for Our mission / about us */
+.section-sec{
+    background-color: var(--secondary-colour);
+    
+    padding: 50px;
+    
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: top;
+}
+
+.mission-box{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.learn-more-btn{
+    color: var(--btn-colour);
+
 }
 
   /* Media queries */
@@ -185,6 +199,12 @@ form input[type=text] {
     }
     .box1:active,.box1:active{
         box-shadow: none;
+    }
+    .mission-box{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: start;
+    justify-content: start;
     }
     }
 
