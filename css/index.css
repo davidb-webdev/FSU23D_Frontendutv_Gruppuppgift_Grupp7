@@ -89,7 +89,7 @@ form input[type=text] {
     float: left;
     width: 20%;
     padding: 10px;
-    background: #ff735a;
+    background: var(--btn-colour);
     color: black;
     font-size: 17px;
     border: 1px solid black;
@@ -99,7 +99,7 @@ form input[type=text] {
   }
   
   form button:hover {
-    background: #f3f1ec;
+    background: var(--hover-colour);
   }
   
   /* Clear floats */
@@ -130,9 +130,9 @@ form input[type=text] {
     align-items: center;
     justify-content: center;
 
-    border: solid 3px #50a5c7;
+    border: solid 3px var(--main-colour);
     border-radius: 10px 10px 10px 10px;
-    background-color: #50a5c7;
+    background-color: var(--main-colour);
     opacity: .8;
     margin-left: 25px;
     margin-right: 25px;
@@ -177,7 +177,7 @@ form input[type=text] {
         width: 50%;}
 
     .box1:hover,.box2:hover{
-        background-color:  #f3f1ec
+        background-color:  var(--hover-colour)
         }
 
     .box1,.box2{
