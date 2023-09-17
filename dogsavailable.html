@@ -3,19 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
-
-
+    <script src="https://kit.fontawesome.com/727ba6c5a9.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/dogsavailable.css">
 
-    <script src="https://kit.fontawesome.com/727ba6c5a9.js" crossorigin="anonymous"></script>
-
-    <link rel="stylesheet" href="css/variables.css">
-
-    <title>Template</title>
+    <title>Dogs available</title>
 </head>
 <body>
     <header>
@@ -42,51 +39,136 @@
     </header>
 
     <main>
-        <div id="dog-gallary">
-            <section class="dog-info"><img src="img/english-bulldog-562723_640.jpg"></section>
-            <section class="dog-info"><img src="img/maltese-1123016_640.jpg"></section>
-            <section class="dog-info"><img src="img/puppy-1903313_640.jpg"></section>
-            <section class="dog-info"><img src="img/german-longhaired-pointer-782498_640.jpg"></section>
-            <section class="dog-info"><img src="img/dog-5340892_640.jpg"></section>
-            <section class="dog-info"><img src="img/english-bulldog-5422018_640.jpg"></section>
-            <section class="dog-info"><img src="img/nature-3047194_640.jpg"></section>
-            <section class="dog-info"><img src="img/pug-965766_640.jpg"></section>
+        <div id="search-container">
+            <form role="search" id="search-dog" action="#">
+                    <input class="age-input" type="number" placeholder="0-8 years" min="0" max="8">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input class="breed-input" type="text" placeholder="Jack Russel/Mixed breed...">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                    <input class="sex-input" type="text" placeholder="Male/Female">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+        <div id="dog-gallary-container">
+            <section class="dog-gallary">
+                <img src="img/english-bulldog-562723_640.jpg" alt="English bulldog playing with a yellow ball">
+                <h3>Wilma</h3>
+                <div><span class="bold-word">Breed:</span> English Bulldog</div>
+                <div><span class="bold-word">Age:</span> Adult</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+                </section>
+            <section class="dog-gallary">
+                <img src="img/puppy-1903313_640.jpg" alt="Golden Retriver puppy on a dock">
+                <h3>Gunnar</h3>
+                <div><span class="bold-word">Breed:</span> Golden Retriver</div>
+                <div><span class="bold-word">Age:</span> Puppy</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
+            <section class="dog-gallary">
+                <img src="img/maltese-1123016_640.jpg" alt="Malteser puppy in the grass">
+                <h3>Olof</h3>
+                <div><span class="bold-word">Breed:</span> Malteser</div>
+                <div><span class="bold-word">Age:</span> Puppy</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
+            <section class="dog-gallary">
+                <img src="img/german-longhaired-pointer-782498_640.jpg" alt="Longhaired pointer lying in the grass">
+                <h3>Stella</h3>
+                <div><span class="bold-word">Breed:</span> Longhaired Pointer</div>
+                <div><span class="bold-word">Age:</span> Adult</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
+            <section class="dog-gallary">
+                <img src="img/dog-5340892_640.jpg" alt="Grey dog with in the grass">
+                <h3>Hilda</h3>
+                <div><span class="bold-word">Breed:</span> Mixed breed</div>
+                <div><span class="bold-word">Age:</span> Adult</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></i></div>            
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
+            <section class="dog-gallary">
+                <img src="img/english-bulldog-5422018_640.jpg" alt="English bulldog puppy sitting in the grass">
+                <h3>Wille</h3>
+                <div><span class="bold-word">Breed:</span> English Bulldog</div>
+                <div><span class="bold-word">Age:</span> Puppy</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
+            <section class="dog-gallary">
+                <img src="img/nature-3047194_640.jpg" alt="Big dog in the grass">
+                <h3>Balder</h3>
+                <div><span class="bold-word">Breed:</span> Afghanhund</div>
+                <div><span class="bold-word">Age:</span> Adult</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
+            <section class="dog-gallary">
+                <img src="img/pug-965766_640.jpg" alt="Pug mix looking at the camera">
+                <h3>Gunnar</h3>
+                <div><span class="bold-word">Breed:</span> Mixed breed</div>
+                <div><span class="bold-word">Age:</span> Adult</div>
+                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
+                <div class="dog-info">
+                    <b>About:</b>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
+                    <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
         </div>
     </main>
 
     <footer>
         <div class="footer-content">
             <section class="icons">
-                <h3>Follow us on social Media</h3> <br>
+                <h3>Follow us on social Media</h3>
                 
                 <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook fa-lg"></i></a>
                 <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
                 <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube fa-lg"></i></a>
             </section>
-            <hr>
             <section class="contact">
                 <h3>Contact</h3>
                 <p>Adoptionsvägen 115 <br> 117 78 Stockholm</p>
                 <p>info@pawsomeadoption.com</p>
                 <p>Call: 555 - ADOPT ME </p>
             </section>
-            <hr>
             <section class="donate">
                 <h3>Make a donation</h3>
                 <p>Make a payment to:</p>
                 <p>BG: 8765-8976<br> PG: 786-8967</p>
                 <p>Or venmo to 555 - DONATE </p> 
             </section>
-            <hr>
         </div>
         <div class="footer-logo">
             <img src="img/logo1.png" alt="logo">
 
         </div>
         <div class="copyright">
-            <p>Copyright 2023</p>
-
-        </div>
-        
+            <p>Copyright Pawsome Adoption 2023</p>
+        </div>   
 </body>
 </html>
