@@ -266,6 +266,19 @@ hr {
    background-size: cover;
    border-radius: 5px;
    }
+
+    /* --------adoption process------------- */
+  #about-features-2 {
+    max-width: 1000px;
+    display: block;
+    margin: auto;
+  }
+  
+.adoption-process li {
+  list-style: none;
+  color: #FDBA71;
+  font-weight: bold;
+}
  
    
  
