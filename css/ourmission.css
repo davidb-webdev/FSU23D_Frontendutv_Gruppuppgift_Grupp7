@@ -1,37 +1,49 @@
-@import url('variables.css');
-@import url('general.css')
+/* @import url('variables.css'); */
+/* @import url('general.css') */
 
-.wrapper {
-    font-family:'quicksand';
-    
+
+
+.container {
+    font-family: 'quicksand';
+   
+    color:#0d4249;
 }
 
 .ourvision-section {
     text-align: center;
-    background-color: #f3f1ec;
+    background-color: lightblue;
     border: 2px solid #0d4249;
     padding-top: 10px;
     border-radius: 12px;
-    margin-bottom: 20px;
+    margin: 20px;
 
 }
 
 .ourvision-section img {
-    max-width: 300px;
-    height: auto;
+    max-width: 100%;
+    height: 100%;
     border-radius: 12px;
+    object-fit: cover;
+}
+
+.section2-pic {
+    display: none;
 }
 
 .section-1, .section-2 {
-    display: grid;
-    grid-template-columns: 1;
-    grid-gap: 30px;
-}
+    /* display: grid;
+    grid-template-columns: 1fr;
+    /* grid-gap: 30px;  */
+
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10px;
+} 
 
 .section1-text, .section1-pic, .section2-text, .section2-pic {
     
     min-width: 100px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
 }
 
 .section1-text, .section2-text {
@@ -41,10 +53,11 @@
 .happy-stories-section {
     
     text-align: center;
-    background-color: #f3f1ec;
+    background-color: lightblue;
     border: 2px solid #0d4249;
     padding-top: 10px;
     border-radius: 12px;
+    margin: 20px;
 }
 
 .dog-boxes {
@@ -67,5 +80,14 @@
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
     }
+
+    .section2-pic {
+        display: block;
+    }
+
+
+}
+
+@media screen and (min-width:992px) {
 
 }
