@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Coming+Soon&family=Quicksand:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/adoptionform.css">
 
     <script src="https://kit.fontawesome.com/727ba6c5a9.js" crossorigin="anonymous"></script>
 
@@ -25,7 +26,7 @@
                 <li class="header-navbar-item"><a href="ourmission.html">Our mission</a></li>
             </ul>
         </div>
-        <a class="donate-btn" href="ourmission.html" >Donate</a>
+        <a class="donate-btn" href="ourmission.html">Donate</a>
         <div class="dropdown">
             <button class="dropdown-btn"><i class="fa-solid fa-bars" style="color: #0d4249;"></i></button>
             <div class="dropdown-content">
@@ -39,7 +40,101 @@
     </header>
 
     <main>
-        Adoption form!
+        <h1>Adopt your dog</h1>
+
+        <fieldset>
+            <legend>Which dog would you like to adopt?</legend>
+
+            <label for="dogSearch">Find available dogs</label>
+            <input id="dogSearch" type="search" name="dogSearch" list="availableDogs">
+
+            <datalist id="availableDogs">
+                <option>Dog 1</option>
+                <option>Dog 2</option>
+                <option>Dog 3</option>
+                <option>Dog 4</option>
+                <option>Dog 5</option>
+            </datalist>
+
+            <input type="checkbox" name="specifyDogType" id="specifyDogType" class="checkToDisplay">
+            <label for="specifyDogType">Specify preferences instead</label>
+            
+            <div class="displayWhenChecked">
+                <label for="specifyBreed">Breed</label>
+                <input id="specifyBreed" type="text" name="specifyBreed">
+
+                <div class="radioButtons">
+                    <p>Sex</p>
+
+                    <input id="specifySexMale" type="radio" name="specifySex">
+                    <label for="specifySexMale">Male</label>
+
+                    <input id="specifySexFemale" type="radio" name="specifySex">
+                    <label for="specifySexFemale">Female</label>
+
+                    <input id="specifySexAny" type="radio" name="specifySex" checked>
+                    <label for="specifySexAny">Any</label>
+                </div>
+
+                <div class="radioButtons">
+                    <p>Age</p>
+
+                    <input id="specifyAgePuppy" type="radio" name="specifyAge">
+                    <label for="specifyAgePuppy">Puppy</label>
+
+                    <input id="specifyAgeAdult" type="radio" name="specifyAge">
+                    <label for="specifyAgeAdult">Adult</label>
+
+                    <input id="specifyAgeAny" type="radio" name="specifyAge" checked>
+                    <label for="specifyAgeAny">Any</label>
+                </div>
+
+                <label for="specifyOther">Other comments</label>
+                <textarea id="specifyOther" name="specifyOther"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>About you</legend>
+            
+            <label for="aboutAge">Date of birth</label>
+            <input id="aboutAge" type="date" name="aboutAge">
+
+            <label for="aboutInformation">About you</label>
+            <textarea id="aboutInformation" name="aboutInformation"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Contact information</legend>
+
+            <label for="contactFirstName">First name</label>
+            <input id="contactFirstName" type="text" name="contactFirstName">
+
+            <label for="contactLastName">Last name</label>
+            <input id="contactLastName" type="text" name="contactLastName">
+
+            <label for="contactAddress">Address</label>
+            <input id="contactAddress" type="text" name="contactAddress">
+
+            <label for="contactPostcode">Postcode</label>
+            <input id="contactPostcode" type="text" name="contactPostcode">
+
+            <label for="contactCity">City</label>
+            <input id="contactCity" type="text" name="contactCity">
+            
+            <label for="contactEmail">Email</label>
+            <input id="contactEmail" type="email" name="contactEmail">
+            
+            <label for="contactPhone">Phone number</label>
+            <input id="contactPhone" type="tel" name="contactPhone">
+        </fieldset>
+
+        <input type="checkbox" id="acceptTerms" name="acceptTerms">
+        <label for="acceptTerms">
+            I accept the <a href="#">terms</a>
+        </label>
+
+        <input type="submit">
     </main>
 
     <footer>

@@ -1,0 +1,31 @@
+/* General styling and reset */
+input[type="text"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+    display: block;
+}
+
+main {
+    font-family: Quicksand, sans-serif;
+}
+
+
+/* Show/hide on click */
+.checkToDisplay, .displayWhenChecked {
+    display: none;
+}
+
+.checkToDisplay + label::before {
+    width: 0.75em;
+    height: auto;
+    content: "▶";
+    display: inline-block;
+    margin-right: 5px;
+    transition: 0.25s all;
+}
+
+.checkToDisplay:checked + label::before {
+    transform: rotate(0.25turn);
+}
+
+.checkToDisplay:checked ~ .displayWhenChecked {
+    display: block;
+}
