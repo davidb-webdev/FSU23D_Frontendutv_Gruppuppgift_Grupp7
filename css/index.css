@@ -156,15 +156,12 @@
     justify-content: center;
 }
 
-.article-parent{
-}
 
 .learn-more-btn{
     color: var(--btn-colour);
 
 }
-.article-text{
-}
+
 
 .article-img{
     border: solid 1px black;
