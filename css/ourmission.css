@@ -9,7 +9,7 @@
     color:#0d4249;
 }
 
-.ourvision-section {
+.ourvision-section, .donate-section, .happy-stories-section {
     text-align: center;
     background-color: lightblue;
     border: 2px solid #0d4249;
@@ -26,14 +26,18 @@
     object-fit: cover;
 }
 
+.donate-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+
+}
+
 .section2-pic {
     display: none;
 }
 
 .section-1, .section-2 {
-    /* display: grid;
-    grid-template-columns: 1fr;
-    /* grid-gap: 30px;  */
 
     display: flex;
     flex-direction: column-reverse;
@@ -49,16 +53,7 @@
 .section1-text, .section2-text {
     text-align: center;
 }   
-
-.happy-stories-section {
     
-    text-align: center;
-    background-color: lightblue;
-    border: 2px solid #0d4249;
-    padding-top: 10px;
-    border-radius: 12px;
-    margin: 20px;
-}
 
 .dog-boxes {
     display: flex;
@@ -73,6 +68,39 @@
 }
 
 
+.donate-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.donating-form {
+    border: 1px solid #0d4249;
+    font-family: 'quicksand';
+    margin: 10px;
+    border-radius: 12px;
+    width: 100%;
+    
+}
+
+.submit-btn {
+    width: 20%;
+    padding: 10px;
+    background: #ff735a;
+    font-size: 17px;
+    border: 1px solid black;
+    border-left: none; 
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+form input {
+    font-family: 'quicksand';
+}
+
+
+
 @media screen and (min-width: 768px) {
 
     .section-1, .section-2 {
@@ -85,9 +113,10 @@
         display: block;
     }
 
-
 }
 
 @media screen and (min-width:992px) {
+
+
 
 }
