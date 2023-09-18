@@ -79,7 +79,7 @@
         float: left;
         width: 20%;
         padding: 10px;
-        background: var(--btn-colour);
+        background: var(--btn-colour-one);
         color: black;
         font-size: 17px;
         border: 1px solid black;
@@ -141,7 +141,7 @@
 .section-sec{
     background-color: var(--secondary-colour);
     
-    padding: 50px;
+    padding-bottom: 10px;
     
     display: flex;
     flex-flow: column wrap;
@@ -151,24 +151,89 @@
 
 .mission-box{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;    
     align-items: center;
     justify-content: center;
 }
 
+.article-parent{
+    display: flex;
+    flex-flow: row wrap;    
+    align-items: center;
+    justify-content: center;
+    
+}
 
 .learn-more-btn{
-    color: var(--btn-colour);
+    font-weight: bold;
+    margin: 5px;
+    color: var(--btn-colour-one);
+
 
 }
 
+.mission-heading{
+    color: var(--btn-colour-one);
+    font-weight: bolder;    
+}
+.article-text{
+    
+    font-size: large;
+    margin-bottom: 40px;
+    padding: 5px 5px 20px 20px;
+    width: auto ;
+}
 
-.article-img{
+/* Third section */
+.section-third{ 
+    display: none;
+}
+.content-third-heading{
+    display: flex;
+    justify-content: center;
+    
+}
+
+#dog-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        gap: 20px 20px;
+        padding: 20px 0px;
+        align-items: center;
+        max-width: 1600px;
+        font-family: quicksand;
+}
+
+#dog-container img {
+    max-width: 300px;}
+
+.dog-info {
+        background-color: #f3f1ec;
+        border: 2px solid #0d4249;
+        min-height: 400px;
+        width: 350px;
+        text-align: center;
+        padding-top: 10px;
+        border-radius: 12px;}
+.dog-info p{
+    font-weight: bold;
+}
+.dog-info a{
+    color: var(--btn-colour-one);
+}
+
+.dog-info img{
     border: solid 1px black;
-    background-color: black;
-    width: 200px;
-    height: 100px;
+    width: 300px;
+    object-fit: contain;
+    border-radius: 10px 10px 10px 10px;
+    margin: 5px; 
 }
+.dog-link{
+    margin: 10px;
+}
+
 
   /* Media queries */
   /* Tablet */
@@ -183,7 +248,14 @@
     
         height: 100px;
         width: 70%;
+    } 
+    .section-third{
+        display: contents;
     }
+    #dog-container > .dog-info:nth-child(3){
+        display: none;
+    }
+
  }
 
 
@@ -209,13 +281,23 @@
     .box1:active,.box1:active{
         box-shadow: none;
     }
-    .mission-box{
-    display: flex;
-    flex-flow: column wrap;
-    align-items: start;
-    justify-content: start;
+
+    .article-text{
+        width: 80%;
+        padding: 0px;
+        
     }
-    }
+     
+     #dog-container >.dog-info:nth-child(3){
+        display: contents;} 
+
+        /* fix so that it displays third dog the right way */
+     }
+
+     
+     
+
+
 
     
 
