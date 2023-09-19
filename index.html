@@ -46,9 +46,10 @@
             <div class="content-first">
                 <div class="form-parent">
                     <form action="dogsavailable.html">
-                    <input type="text" placeholder="Find your dog..." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                  </form></div>
+                        <input type="text" placeholder="Find your dog..." name="dog-search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
                 </div>
 
                 <div class="content-second">
@@ -56,15 +57,43 @@
                 </div>
 
                 <div class="content-third">
-                    <div class="box1">Puppies</div>
-                    <div class="box2">Adult dogs</div>
+                    
+                    <button class=box1 type="button" onclick="window.location.href = 'dogsavailable.html';"><h2>Puppies</h2></button>
+                    <button class=box2 type="button" onclick="window.location.href = 'dogsavailable.html';"><h2>Adult dogs</h2></button>
+                    
                 </div>
                 
                 
 
        </section>
        <section class="section-sec">
-        <div class="mission-box"> Our mission</div>
+        <div class="mission-box">
+            <h2 class="mission-heading">Our mission</h2>
+            <article class="article-parent">
+                <div class="article-text">
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque 
+                penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
+                vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, 
+                justo. Nullam dictum felis eu pede mollis pretium. Integer.<a class="learn-more-btn" href="about.html"> Learn more...</a></div>
+            
+                
+            
+             
+        </div>
+       </section>
+       <section class="section-third">
+        <div class="content-sec-third">
+            <h2 class="content-third-heading">Some of the guys</h2>
+            <div id="dog-container">
+                <div class="dog-info"><img src="img/puppy-1903313_640.jpg" alt=""><p class="dog-name">Name:<a class="dog-link" href="dogsavailable.html">Billy</a></p></div>
+                <div class="dog-info"><img src="img/pug-965766_640.jpg" alt=""><p class="dog-name">Name:<a class="dog-link" href="dogsavailable.html">Nugget</a></p></div>
+                <div class="dog-info"><img src="img/maltese-1123016_640.jpg" alt=""><p class="dog-name"><p>Name:<a class="dog-link" href="dogsavailable.html">Buster</a></p></div>
+            </div>
+            
+        </div>
        </section>
     </main>
 
