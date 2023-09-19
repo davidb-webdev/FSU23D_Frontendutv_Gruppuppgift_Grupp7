@@ -16,9 +16,9 @@ main * {
     text-align: center;
     background-color: lightblue;
     border: 2px solid #0d4249;
-    padding-top: 10px;
     border-radius: 12px;
-    margin: 20px;
+    margin: 15px;
+    padding: 20px;
 
 }
 
@@ -34,15 +34,8 @@ main * {
 .ourvision-section img {
     max-width: 100%;
     height: 100%;
-    border-radius: 12px;
     object-fit: cover;
-}
-
-.donate-section img {
-    width: 100%;
-    height: auto;
     border-radius: 12px;
-
 }
 
 .section2-pic, .donate-text-section {
@@ -56,11 +49,7 @@ main * {
     margin: 10px;
 } 
 
-.section1-text, .section1-pic, .section2-text, .section2-pic {
-    
-    min-width: 100px;
-    /* border: 1px solid #000; */
-}
+
 
 .section1-text, .section2-text {
     text-align: center;
@@ -92,10 +81,6 @@ form button {
     margin-bottom: 10px;
 }
 
-form {
-    font-family: 'quicksand';
-}
-
 input, select {
 
     width: 80%;
@@ -105,10 +90,9 @@ input, select {
     border: 1px solid #333;
 }
 
-
 @media screen and (min-width: 768px) {
 
-    .section-1, .section-2 {
+     .section-2, .section-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
@@ -129,19 +113,61 @@ input, select {
     .donate-text-section {
         display:block;
         flex: 1;
+        margin: 20px;
+        padding: 20px;
         
     }
 
+    form {
+        margin: 0;
+        padding: 0;
+    }
 
-}
+    form button {
+        width: 30%;
+    }
 
-
-@media screen and (min-width:992px) {
-
-    .section-2 {
-        flex-direction:;
+    .more-info-text{
+        display: none;
     }
 
 
-
 }
+
+@media screen and (min-width:992px) {
+
+    .section2-text, .section1-text{
+
+        width: 500px;
+        margin: auto;
+        
+        
+    }
+}
+
+
+@media screen and (min-width:1200px) {
+
+
+    .more-info-text{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .section2-text, .section1-text{
+
+        width: 600px;
+        margin: auto;
+        
+        
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .section2-pic {
+        margin-right: 40px;
+    }  
+}
+
