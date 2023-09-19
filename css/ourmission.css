@@ -9,11 +9,10 @@ main * {
 
 .container {
     font-family: 'quicksand';
-   
     color:#0d4249;
 }
 
-.ourvision-section, #donate-section, .happy-stories-section {
+.ourvision-section, .happy-stories-section, #donate-section-container {
     text-align: center;
     background-color: lightblue;
     border: 2px solid #0d4249;
@@ -21,6 +20,15 @@ main * {
     border-radius: 12px;
     margin: 20px;
 
+}
+
+
+.donate-section, .donate-text-section {
+    text-align: center;
+    background-color: lightblue;
+    padding-top: 10px;
+    border-radius: 12px;
+    margin: 20px;
 }
 
 .ourvision-section img {
@@ -37,7 +45,7 @@ main * {
 
 }
 
-.section2-pic {
+.section2-pic, .donate-text-section {
     display: none;
 }
 
@@ -72,21 +80,6 @@ main * {
 }
 
 
-#donate-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.donating-form {
-    /* border: 1px solid #0d4249; */
-    font-family: 'quicksand';
-    margin: 10px;
-    border-radius: 12px;
-    width: 100%;
-    
-}
-
 form button {
     width: 20%;
     padding: 10px;
@@ -96,6 +89,7 @@ form button {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 form {
@@ -124,17 +118,29 @@ input, select {
         display: block;
     }
 
-}
+    #donate-section-container {
+        display: flex;
+    }
 
-@media screen and (min-width:880px) {
-    #donate-section {
-        width: 50%;
+    .donate-section {
+        flex: 1;
+    }
+
+    .donate-text-section {
+        display:block;
+        flex: 1;
         
     }
-    
+
+
 }
 
+
 @media screen and (min-width:992px) {
+
+    .section-2 {
+        flex-direction:;
+    }
 
 
 
