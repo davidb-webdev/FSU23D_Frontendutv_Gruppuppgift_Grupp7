@@ -27,7 +27,7 @@
                 <li class="header-navbar-item"><a href="ourmission.html">Our mission</a></li>
             </ul>
         </div>
-        <a class="donate-btn" href="ourmission.html" >Donate</a>
+        <a class="donate-btn" href="ourmission.html#donate-section" >Donate</a>
         <div class="dropdown">
             <button class="dropdown-btn"><i class="fa-solid fa-bars" style="color: #0d4249;"></i></button>
             <div class="dropdown-content">
@@ -45,7 +45,7 @@
             <div class="ourvision-section">
                 <div class="section-1">
                     <section class="section1-pic"> 
-                        <img src="img/happydogandowner.jpg" alt="dog">
+                        <img src="img/dogandfamily.jpg" alt="dog">
                     </section>
                     <section class="section1-text">
                         <h1>Our mission</h1>
@@ -58,11 +58,11 @@
                         At Pawsome Adoption, we strive to provide a second chance to these loyal companions, 
                         offering them a safe and loving environment where they can thrive. <br> <br>
                         
-                        We believe in the transformative power of compassion and dedication. 
+                        <!-- We believe in the transformative power of compassion and dedication. 
                         Our dedicated team of volunteers and professionals work tirelessly to 
                         rescue dogs from shelters, abusive situations, or neglectful owners. 
                         Through rehabilitation and expert care, we heal both the physical and 
-                        emotional wounds of our furry friends.
+                        emotional wounds of our furry friends. -->
                         </p>
                     
                     </section>
@@ -86,38 +86,55 @@
                         <img src="img/dogsplay.jpg" alt="dog">
                     </section>
                 </div>
-            </div>    
-    
-            
+            </div>
+
             <div class="happy-stories-section">
                 <h3>Successful Stories</h3>
                 <h5>Dogs who found a family through Pawsome Adoption</h5>
                 <div class="dog-boxes">
-                <section class="dog-box">
-                    <img src="img/dogandowner3.jpg" alt="dog">
-                    <p> <i>Snowball found his home in Emma.</i></p>
-                </section>
-                <section class="dog-box">
-                    <img src="img/dogandowner2.jpg" alt="dog">
-                    <p><i>Lilo and Katerine</i></p>
-                </section>
-                <section class="dog-box">
-                    <img src="img/dogandowner.jpg" alt="dog">
-                    <p><i>Mozart and his new mom Lily.</i></p>
-                </section>
-                </div>
-    
+                    <section class="dog-box">
+                        <img src="img/dogandowner3.jpg" alt="dog">
+                        <p> <i>Snowball found his home in Emma.</i></p>
+                    </section>
+                    <section class="dog-box">
+                        <img src="img/dogandowner2.jpg" alt="dog">
+                        <p><i>Lilo and Katerine</i></p>
+                    </section>
+                    <section class="dog-box">
+                        <img src="img/dogandowner.jpg" alt="dog">
+                        <p><i>Mozart and his new mom Lily.</i></p>
+                    </section>
+                </div>    
             </div>
-                <section class="donate-section">
-                <form>
-    
-    
+
+            <div class="donate-section">
+                <h1>Make a donation</h1>
+                <form class="donating-form">
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="first name" placeholder="First Name..."><br>
+
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="last name" placeholder="Last Name..."><br>
+
+                    <label for="email"> Email:</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email address..."><br>
+
+                    <label for="amount">Choose how much to donate:</label> <br>
+                    <select name="amount" id="amount">
+                    <option value="200">200 kr</option>
+                    <option value="500">500 kr</option>
+                    <option value="1000">1000 kr</option>
+                    <option value="1500">1500 kr</option>
+                    </select>
+                    <br>
+
+                    <label for="receipt">Send receipt to email</label>
+                    <input type="checkbox" id="receipt" name="receipt">
+                    
+                    <button>Donate</button>
                 </form>
-            </section>
-    
+            </div>
         </div>
-
-
     </main>
 
     <footer>
