@@ -83,22 +83,25 @@
     
 }
 
-.submit-btn {
+form button {
     width: 20%;
     padding: 10px;
     background: #ff735a;
     font-size: 17px;
-    border: 1px solid black;
-    border-left: none; 
+    border: 1px solid black; 
     border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
 }
 
-form input {
+form {
     font-family: 'quicksand';
 }
 
+input [type="text"] {
+
+
+}
 
 
 @media screen and (min-width: 768px) {
