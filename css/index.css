@@ -287,12 +287,14 @@
         padding: 0px;
         
     }
-     
+     .section-third {
+        display: contents;}
+
      #dog-container >.dog-info:nth-child(3){
         display: contents;} 
+    }
 
         /* fix so that it displays third dog the right way */
-     }
 
      
      
