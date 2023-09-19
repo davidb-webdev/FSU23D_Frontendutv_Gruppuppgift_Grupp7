@@ -112,18 +112,25 @@
                 <form class="donating-form">
                     <label for="fname">First name:</label><br>
                     <input type="text" id="fname" name="first name" placeholder="First Name..."><br>
+
                     <label for="lname">Last name:</label><br>
                     <input type="text" id="lname" name="last name" placeholder="Last Name..."><br>
+
                     <label for="email"> Email:</label><br>
                     <input type="email" id="email" name="email" placeholder="Email address..."><br>
-                    <label for="value">Choose how much to donate:</label> <br>
-                    <input type="radio" id="value" name="amount" value="200 kr">
-                    <label for="amount">200 kr</label> <br>
-                    <input type="radio" name="amount" value="500 kr">
-                    <label for="amount">500 kr</label><br>
-                    <input type="radio" name="amount" value="choose amount">
-                    <label for="amount">Other amount:</label> <br>
-                    <input type="text"> <br>
+
+                    <label for="amount">Choose how much to donate:</label> <br>
+                    <select name="amount" id="amount">
+                    <option value="200">200 kr</option>
+                    <option value="500">500 kr</option>
+                    <option value="1000">1000 kr</option>
+                    <option value="1500">1500 kr</option>
+                    </select>
+                    <br>
+
+                    <label for="receipt">Send receipt to email</label>
+                    <input type="checkbox" id="receipt" name="receipt">
+                    
                     <button>Donate</button>
                 </form>
             </div>

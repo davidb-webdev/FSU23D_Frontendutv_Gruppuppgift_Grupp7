@@ -98,9 +98,13 @@ form {
     font-family: 'quicksand';
 }
 
-input [type="text"] {
+input, select {
 
-
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #333;
 }
 
 
@@ -119,6 +123,11 @@ input [type="text"] {
 }
 
 @media screen and (min-width:992px) {
+
+    .donate-section {
+        width: 50%;
+    }
+
 
 
 
