@@ -9,35 +9,36 @@ main * {
 
 .container {
     font-family: 'quicksand';
-   
     color:#0d4249;
 }
 
-.ourvision-section, .donate-section, .happy-stories-section {
+.ourvision-section, .happy-stories-section, #donate-section-container {
     text-align: center;
     background-color: lightblue;
     border: 2px solid #0d4249;
+    border-radius: 12px;
+    margin: 15px;
+    padding: 20px;
+
+}
+
+
+.donate-section, .donate-text-section {
+    text-align: center;
+    background-color: lightblue;
     padding-top: 10px;
     border-radius: 12px;
     margin: 20px;
-
 }
 
 .ourvision-section img {
     max-width: 100%;
     height: 100%;
-    border-radius: 12px;
     object-fit: cover;
-}
-
-.donate-section img {
-    width: 100%;
-    height: auto;
     border-radius: 12px;
-
 }
 
-.section2-pic {
+.section2-pic, .donate-text-section {
     display: none;
 }
 
@@ -48,11 +49,7 @@ main * {
     margin: 10px;
 } 
 
-.section1-text, .section1-pic, .section2-text, .section2-pic {
-    
-    min-width: 100px;
-    /* border: 1px solid #000; */
-}
+
 
 .section1-text, .section2-text {
     text-align: center;
@@ -72,21 +69,6 @@ main * {
 }
 
 
-.donate-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.donating-form {
-    /* border: 1px solid #0d4249; */
-    font-family: 'quicksand';
-    margin: 10px;
-    border-radius: 12px;
-    width: 100%;
-    
-}
-
 form button {
     width: 20%;
     padding: 10px;
@@ -96,10 +78,7 @@ form button {
     border-radius: 10px;
     cursor: pointer;
     margin-top: 10px;
-}
-
-form {
-    font-family: 'quicksand';
+    margin-bottom: 10px;
 }
 
 input, select {
@@ -111,10 +90,9 @@ input, select {
     border: 1px solid #333;
 }
 
-
 @media screen and (min-width: 768px) {
 
-    .section-1, .section-2 {
+     .section-2, .section-1 {
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 30px;
@@ -124,18 +102,72 @@ input, select {
         display: block;
     }
 
-}
+    #donate-section-container {
+        display: flex;
+    }
 
-@media screen and (min-width:880px) {
     .donate-section {
-        width: 50%;
+        flex: 1;
+    }
+
+    .donate-text-section {
+        display:block;
+        flex: 1;
+        margin: 20px;
+        padding: 20px;
         
     }
-    
+
+    form {
+        margin: 0;
+        padding: 0;
+    }
+
+    form button {
+        width: 30%;
+    }
+
+    .more-info-text{
+        display: none;
+    }
+
+
 }
 
 @media screen and (min-width:992px) {
 
+    .section2-text, .section1-text{
 
-
+        width: 500px;
+        margin: auto;
+        
+        
+    }
 }
+
+
+@media screen and (min-width:1200px) {
+
+
+    .more-info-text{
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+
+    .section2-text, .section1-text{
+
+        width: 600px;
+        margin: auto;
+        
+        
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .section2-pic {
+        margin-right: 40px;
+    }  
+}
+
