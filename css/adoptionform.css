@@ -38,7 +38,7 @@ input[type="search"],
 textarea {
     display: block;
     margin: 0.5rem 0 1rem;
-    border: 2px solid #0d4249;
+    border: 1px solid #0d4249;
     border-radius: 12px;
     padding: 0.5rem;
     width: 100%;
@@ -58,7 +58,7 @@ textarea {
 input[type="submit"] {
     display: block;
     margin: 1rem auto;
-    border: 2px solid #0d4249;
+    border: 1px solid #0d4249;
     border-radius: 15px;
     padding: 1rem;
     width: 100%;
@@ -78,6 +78,7 @@ input:focus, textarea:focus {
 input:required:valid,
 textarea:required:valid {
     border-color: green;
+    box-shadow: 0 0 2px green inset
 }
 
 input:required:invalid + label::after,
