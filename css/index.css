@@ -40,8 +40,8 @@
 
 .selection-text{
     
-    font-size: 30px;
-    text-shadow: 2px 2px 8px white;
+    font-size: 29px;
+    text-shadow: 3px 3px 8px white;
     
     display: flex;
     flex-flow: column wrap;
@@ -108,7 +108,7 @@
         align-items: center;
         justify-content: center;
         
-        height: 300px;
+        height: 250px;
         width: 100%
         
     }
@@ -139,7 +139,7 @@
 
 /* Css for Our mission / about us */
 .section-sec{
-    background-color: var(--secondary-colour);
+    background-color: var(--darkblue);
     
     padding-bottom: 10px;
     
@@ -166,7 +166,6 @@
 
 .learn-more-btn{
     font-weight: bold;
-    margin: 5px;
     color: var(--btn-colour-one);
 
 
@@ -181,7 +180,7 @@
     font-size: large;
     margin-bottom: 40px;
     padding: 5px 5px 20px 20px;
-    width: auto ;
+    width: 90% ;
 }
 
 /* Third section */
@@ -197,7 +196,7 @@
 #dog-container {
         display: flex;
         flex-flow: row wrap;
-        justify-content: center;
+        justify-content: space-evenly;
         gap: 20px 20px;
         padding: 20px 0px;
         align-items: center;
@@ -209,10 +208,10 @@
     max-width: 300px;}
 
 .dog-info {
-        background-color: #f3f1ec;
+        background-color: #c3d9d8;
         border: 2px solid #0d4249;
         min-height: 400px;
-        width: 350px;
+        width: 310px;
         text-align: center;
         padding-top: 10px;
         border-radius: 12px;}
@@ -225,7 +224,7 @@
 
 .dog-info img{
     border: solid 1px black;
-    width: 300px;
+    width: 290px;
     object-fit: contain;
     border-radius: 10px 10px 10px 10px;
     margin: 5px; 
@@ -286,7 +285,10 @@
         
     }
      .section-third {
-        display: block;}
+        display: flex;
+        justify-content: center;
+    
+    }
 
      #dog-container >.dog-info:nth-child(3){
         display: block;} 
@@ -307,3 +309,10 @@
 /* A lot of flx code is written the same and can be but in the same elements to make it less code */
 
 /* Change font-size based of media */
+
+/* More info on dog info */
+/* add a hover over names on dog-info */
+/* make dog-info picture link */
+/* figure out good background color on third section */
+/* Fix layout on third section  */
+/* Clean up code in CSS, example, look over all flex and put on same code */
