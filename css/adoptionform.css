@@ -1,0 +1,157 @@
+/* ===== General styling and reset ===== */
+main {
+    font-family: Quicksand, sans-serif;
+}
+
+main * {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;;
+}
+
+h3 {
+    margin-bottom: 0.25rem;
+}
+
+fieldset {
+    border: 0;
+    margin: 2rem 0 3rem;
+}
+
+fieldset.terms {
+    text-align: center;
+}
+
+legend {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="search"],
+textarea {
+    display: block;
+    margin: 0.5rem 0 1rem;
+    border: 2px solid #0d4249;
+    border-radius: 12px;
+    padding: 0.5rem;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1;
+    transition: border-color 0.25s;
+}
+
+textarea {
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    line-height: 1.5;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 1rem auto;
+    border: 2px solid #0d4249;
+    border-radius: 15px;
+    padding: 1rem;
+    width: 100%;
+    background: var(--donate-btn-colour);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* ===== Focus and validation effects ===== */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--main-colour);
+}
+
+input:required:valid,
+textarea:required:valid {
+    border-color: green;
+}
+
+input:required:invalid + label::after,
+textarea:required:invalid + label::after {
+    content: "*";
+    color: var(--donate-btn-colour);
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+input:required:valid + label::after, 
+textarea:required:valid + label::after {
+    content: "✓";
+    color: green;
+    margin-left: 3px;
+    font-weight: bold;
+}
+
+
+/* ===== Show/hide on click ===== */
+.displayToggle, .displayWhenChecked {
+    display: none;
+}
+
+.displayToggle:checked ~ .displayWhenChecked {
+    display: block;
+    background: var(--hover-colour);
+    border: 1px solid #0d4249;
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.displayWhenChecked {
+    margin: 0.5rem 0 1rem;
+}
+
+.displayToggle + label::before {
+    width: 0.75em;
+    height: auto;
+    content: "▶";
+    display: inline-block;
+    margin-right: 5px;
+    transition: 0.25s all;
+}
+
+.displayToggle:checked + label::before {
+    transform: rotate(0.25turn);
+}
+
+/* ===== "Floating" label inside textfield ===== */
+.positionLabel {
+    position: relative;
+}
+
+.positionLabel input {
+    padding-top: 17px;
+}
+
+.positionLabel textarea {
+    padding-top: 14px;
+}
+
+.positionLabel label {
+    position: absolute;
+    top: 4px;
+    left: 10px;
+    font-size: 0.75rem;
+    transition: 0.15s transform;
+    background: #fff;
+}
+
+/* Note: :placeholder-shown is experimental, but has been supported in major browsers for years */
+.positionLabel input:placeholder-shown ~ label,
+.positionLabel textarea:placeholder-shown ~ label {
+    transform: translate(20%, 75%) scale(1.35);
+}
+
+.positionLabel input:focus ~ label,
+.positionLabel textarea:focus ~ label {
+    transform: none;
+}
