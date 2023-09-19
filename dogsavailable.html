@@ -25,7 +25,7 @@
                 <li class="header-navbar-item"><a href="ourmission.html">Our mission</a></li>
             </ul>
         </div>
-        <a class="donate-btn" href="ourmission.html" >Donate</a>
+        <a class="donate-btn" href="ourmission.html">Donate</a>
         <div class="dropdown">
             <button class="dropdown-btn"><i class="fa-solid fa-bars" style="color: #0d4249;"></i></button>
             <div class="dropdown-content">
@@ -40,12 +40,16 @@
 
     <main>
         <div id="search-container">
-            <form role="search" id="search-dog" action="#">
-                    <input class="age-input" type="number" placeholder="0-8 years" min="0" max="8">
+            <form role="search" id="search-dog" action="dogsavailable.html">
+                    <input name="age" class="age-input" type="number" placeholder="Age" min="0" max="15">
                     <button type="submit" class="btn-1"><i class="fa fa-search"></i></button>
-                    <input class="breed-input" type="text" placeholder="Jack Russel...">
+                    <input name="breed" class="breed-input" type="text" placeholder="Breed">
                     <button type="submit" class="btn-2"><i class="fa fa-search"></i></button>
-                    <input class="sex-input" type="text" placeholder="Male/Female">
+                    <select name="gender" class="gender-input">
+                        <option value="choose-gender">Choose gender</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
                     <button type="submit" class="btn-3"><i class="fa fa-search"></i></button>
             </form>
         </div>
@@ -55,7 +59,7 @@
                 <h3>Wilma</h3>
                 <div><span class="bold-word">Breed:</span> English Bulldog</div>
                 <div><span class="bold-word">Age:</span> Adult</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
@@ -66,7 +70,7 @@
                 <h3>Gunnar</h3>
                 <div><span class="bold-word">Breed:</span> Golden Retriver</div>
                 <div><span class="bold-word">Age:</span> Puppy</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
@@ -77,7 +81,7 @@
                 <h3>Olof</h3>
                 <div><span class="bold-word">Breed:</span> Malteser</div>
                 <div><span class="bold-word">Age:</span> Puppy</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
@@ -88,7 +92,7 @@
                 <h3>Stella</h3>
                 <div><span class="bold-word">Breed:</span> Longhaired Pointer</div>
                 <div><span class="bold-word">Age:</span> Adult</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
@@ -99,7 +103,7 @@
                 <h3>Hilda</h3>
                 <div><span class="bold-word">Breed:</span> Mixed breed</div>
                 <div><span class="bold-word">Age:</span> Adult</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></i></div>            
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-venus" style="color: black"></i></i></div>            
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
@@ -110,7 +114,7 @@
                 <h3>Wille</h3>
                 <div><span class="bold-word">Breed:</span> English Bulldog</div>
                 <div><span class="bold-word">Age:</span> Puppy</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
@@ -121,7 +125,7 @@
                 <h3>Balder</h3>
                 <div><span class="bold-word">Breed:</span> Afghan</div>
                 <div><span class="bold-word">Age:</span> Adult</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-mars" style="color: black;"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
@@ -132,7 +136,7 @@
                 <h3>Gunnar</h3>
                 <div><span class="bold-word">Breed:</span> Mixed breed</div>
                 <div><span class="bold-word">Age:</span> Adult</div>
-                <div><span class="bold-word">Sex:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
+                <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
