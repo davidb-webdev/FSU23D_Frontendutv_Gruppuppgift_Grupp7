@@ -46,6 +46,7 @@ textarea {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     line-height: 1.5;
+    min-height: 8rem;
 }
 
 input[type="submit"] {
