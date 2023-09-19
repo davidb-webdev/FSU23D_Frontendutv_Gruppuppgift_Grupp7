@@ -250,15 +250,13 @@
         width: 70%;
     } 
     .section-third{
-        display: contents;
+        display: block;
     }
     #dog-container > .dog-info:nth-child(3){
         display: none;
     }
 
  }
-
-
     /* Desktop */
     @media (min-width: 992px) {
  
@@ -288,10 +286,10 @@
         
     }
      .section-third {
-        display: contents;}
+        display: block;}
 
      #dog-container >.dog-info:nth-child(3){
-        display: contents;} 
+        display: block;} 
     }
 
         /* fix so that it displays third dog the right way */
