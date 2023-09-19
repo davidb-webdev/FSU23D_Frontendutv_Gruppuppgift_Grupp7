@@ -1,3 +1,12 @@
+form input, .gender-input, #dog-gallary-container, h3, b {
+    color: #0d4249;
+}
+
+.bold-word, .info-dog-link {
+    color: #ff735a;
+    font-weight: bold;
+}
+
 #search-container {
     display: flex;
     flex-flow: column wrap;
@@ -20,7 +29,6 @@ form input, .gender-input {
     font-size: 17px;
     background: white;
     border: 1px solid black;
-    color: #0d4249;
   }
 
 .age-input, .breed-input, .gender-input {
@@ -40,7 +48,7 @@ form button {
     cursor: pointer;
   }
 
-form button:hover {
+form button:hover, .info-dog-link:hover {
     background: #0d4249;
     color: #f3f1ec;
   }
@@ -54,7 +62,6 @@ form button:hover {
     align-items: center;
     max-width: 1600px;
     font-family: quicksand;
-    color: #0d4249;
 }
 
 #dog-gallary-container img {
@@ -72,32 +79,18 @@ form button:hover {
     border-radius: 12px;
 }
 
-.bold-word {
-    color: #ff735a;
-    font-weight: bold;
-}
-
 .dog-info {
     padding: 10px;
     text-align: left;
 }
 
-h3, b {
-    color: #0d4249;
-}
-
 .info-dog-link {
-    color:#ff735a;
-    font-weight: bold;
     text-decoration: none;
     padding: 5px 15px;
     border-radius: 12px;
 }
 
-.info-dog-link:hover {
-    background-color: #0d4249;
-    color: #f3f1ec;
-}
+
 
 
 /* Tablet */
