@@ -1,27 +1,31 @@
 /* ===== General styling and reset ===== */
 main {
-    font-family: Quicksand, sans-serif;
+    font-family: var(--default-font-family);
+    padding: 1.5rem;
 }
 
-main * {
+main,
+main *,
+main *::before {
     box-sizing: border-box;
 }
 
 h1 {
-    text-align: center;;
+    text-align: center;
 }
 
 h3 {
-    margin-bottom: 0.25rem;
+    margin: 0 0 0.25rem;
+}
+
+.formDescription {
+    display: none;
 }
 
 fieldset {
     border: 0;
     margin: 2rem 0 3rem;
-}
-
-fieldset.terms {
-    text-align: center;
+    padding: 0;
 }
 
 legend {
@@ -36,7 +40,7 @@ input[type="search"],
 textarea {
     display: block;
     margin: 0.5rem 0 1rem;
-    border: 2px solid #0d4249;
+    border: 1px solid #0d4249;
     border-radius: 12px;
     padding: 0.5rem;
     width: 100%;
@@ -50,18 +54,30 @@ textarea {
     padding-top: 0.25rem;
     padding-bottom: 0.25rem;
     line-height: 1.5;
+    min-height: 8rem;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: 0.9rem;
+    height: 0.9rem;
 }
 
 input[type="submit"] {
     display: block;
     margin: 1rem auto;
-    border: 2px solid #0d4249;
+    border: 1px solid #0d4249;
     border-radius: 15px;
     padding: 1rem;
     width: 100%;
-    background: var(--donate-btn-colour);
-    font-size: 1rem;
+    background: var(--btn-colour-one);
+    font-size: 1.25rem;
     font-weight: 600;
+    cursor: pointer;
+}
+
+input[type="submit"]:active {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) inset;
 }
 
 
@@ -69,6 +85,7 @@ input[type="submit"] {
 input:focus, textarea:focus {
     outline: none;
     border-color: var(--main-colour);
+    box-shadow: 0 0 3px var(--main-colour) inset;
 }
 
 input:required:valid,
@@ -76,10 +93,15 @@ textarea:required:valid {
     border-color: green;
 }
 
+input:required:valid:focus,
+textarea:required:valid:focus {
+    box-shadow: 0 0 3px green inset;
+}
+
 input:required:invalid + label::after,
 textarea:required:invalid + label::after {
     content: "*";
-    color: var(--donate-btn-colour);
+    color: var(--btn-colour-one);
     margin-left: 3px;
     font-weight: bold;
 }
@@ -93,35 +115,22 @@ textarea:required:valid + label::after {
 }
 
 
-/* ===== Show/hide on click ===== */
-.displayToggle, .displayWhenChecked {
-    display: none;
+/* ===== Class- & ID-specific styling ===== */
+.terms {
+    text-align: center;
+    font-size: 1.25rem;
 }
 
-.displayToggle:checked ~ .displayWhenChecked {
-    display: block;
-    background: var(--hover-colour);
-    border: 1px solid #0d4249;
-    border-radius: 15px;
-    padding: 2rem;
+.terms a {
+    color: var(--main-colour);
 }
 
-.displayWhenChecked {
+.radioButtons {
     margin: 0.5rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.displayToggle + label::before {
-    width: 0.75em;
-    height: auto;
-    content: "▶";
-    display: inline-block;
-    margin-right: 5px;
-    transition: 0.25s all;
-}
-
-.displayToggle:checked + label::before {
-    transform: rotate(0.25turn);
-}
 
 /* ===== "Floating" label inside textfield ===== */
 .positionLabel {
@@ -142,16 +151,163 @@ textarea:required:valid + label::after {
     left: 10px;
     font-size: 0.75rem;
     transition: 0.15s transform;
-    background: #fff;
 }
 
-/* Note: :placeholder-shown is experimental, but has been supported in major browsers for years */
+.positionLabel textarea + label {
+    background: #fff; /* add background only to labels for textareas, to make the labels clearly visible even when scrolling */
+    border-radius: 10px;
+}
+
 .positionLabel input:placeholder-shown ~ label,
 .positionLabel textarea:placeholder-shown ~ label {
+    /* :placeholder-shown is experimental, but has been supported in major browsers for years */
     transform: translate(20%, 75%) scale(1.35);
 }
 
 .positionLabel input:focus ~ label,
 .positionLabel textarea:focus ~ label {
     transform: none;
+}
+
+.positionLabel input::placeholder,
+.positionLabel textarea::placeholder {
+    visibility: hidden; /* Hide any placeholders visually and from screen readers */
+}
+
+
+/* ===== Show/hide on click ===== */
+.displayToggle, .displayWhenChecked {
+    display: none;
+}
+
+.displayToggle:checked ~ .displayWhenChecked {
+    display: block;
+    background: var(--hover-colour);
+    border: 1px solid var(--darkblue);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.displayWhenChecked {
+    margin: 0.5rem 0 1rem;
+}
+
+.displayToggle + label {
+    color: var(--btn-colour-one);
+    font-weight: bold;
+}
+
+.displayToggle + label::before {
+    width: 0.75em;
+    height: auto;
+    content: "▶";
+    display: inline-block;
+    margin-right: 5px;
+    color: var(--btn-colour-one);
+    transition: 0.25s all;
+}
+
+.displayToggle:checked + label::before {
+    transform: rotate(0.25turn);
+}
+
+
+/* ===== Tablet styling ===== */
+@media (min-width: 768px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1rem;
+    }
+
+    fieldset {
+        grid-column-start: 1;
+    }
+
+    .terms {
+        grid-column: 1 / 3;
+    }
+
+    .terms input[type="submit"] {
+        max-width: 50%;
+    }
+
+    .radioButtons {
+        max-width: 66.6%;
+    }
+
+
+    .formDescription {
+        display: block;
+        grid-column-start: 2;
+        position: relative;
+    }
+
+    .sticky {
+        position: sticky;
+        top: 6.5rem;
+        background-color: #fff;
+        margin: 4.2rem 0 4rem;
+    }
+}
+
+
+/* ===== Desktop styling ===== */
+@media (min-width: 992px) {
+    main {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    form {
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+
+    .formDescription {
+        grid-column-start: 3;
+    }
+
+    fieldset {
+        grid-column-start: 2;
+        position: relative;
+    }
+
+    fieldset::before {
+        content: "";
+        background-repeat: no-repeat;
+        background-size: 50%;
+        background-position: right 12%;
+        width: 50%;
+        height: 10rem;
+        position: absolute;
+        left: calc(-50% - 1rem);
+        opacity: 0.1;
+    }
+
+    .whichDog::before {
+        background-image: url('../img/formicon1.png');
+    }
+
+    .aboutYou::before {
+        background-image: url('../img/formicon2.png');
+    }
+
+    .contactInformation::before {
+        background-image: url('../img/formicon3.png');
+        background-size: 45%;
+    }
+
+    .terms {
+        grid-column: 1 / 4;
+    }
+
+    .terms::before {
+        display: none;
+    }
+
+    /*fieldset legend {
+        position: relative;
+        width: 150%;
+        left: calc(-50% - 1rem);
+    }*/
 }
