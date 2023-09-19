@@ -257,8 +257,6 @@
     }
 
  }
-
-
     /* Desktop */
     @media (min-width: 992px) {
  
@@ -288,7 +286,7 @@
         
     }
      .section-third {
-        display: block ;}
+        display: block;}
 
      #dog-container >.dog-info:nth-child(3){
         display: block;} 
