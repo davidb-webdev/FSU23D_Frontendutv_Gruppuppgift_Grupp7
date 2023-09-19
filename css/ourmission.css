@@ -13,7 +13,7 @@ main * {
     color:#0d4249;
 }
 
-.ourvision-section, .donate-section, .happy-stories-section {
+.ourvision-section, #donate-section, .happy-stories-section {
     text-align: center;
     background-color: lightblue;
     border: 2px solid #0d4249;
@@ -72,7 +72,7 @@ main * {
 }
 
 
-.donate-section {
+#donate-section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -127,7 +127,7 @@ input, select {
 }
 
 @media screen and (min-width:880px) {
-    .donate-section {
+    #donate-section {
         width: 50%;
         
     }
