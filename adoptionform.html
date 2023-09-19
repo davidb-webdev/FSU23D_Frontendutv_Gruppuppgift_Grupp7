@@ -41,7 +41,7 @@
 
     <main>
         <h1>Adopt your dog</h1>
-        <form>
+        <form action="adoptionform.html" method="POST">
             <fieldset>
                 <legend>
                     <h2>Which dog would you like to adopt?</h2>
@@ -52,11 +52,14 @@
                     <label for="dogSearch">Find available dogs&hellip;</label>
 
                     <datalist id="availableDogs">
-                        <option>Dog 1</option>
-                        <option>Dog 2</option>
-                        <option>Dog 3</option>
-                        <option>Dog 4</option>
-                        <option>Dog 5</option>
+                        <option>Wilma</option>
+                        <option>Gunnar</option>
+                        <option>Olof</option>
+                        <option>Stella</option>
+                        <option>Hilda</option>
+                        <option>Wille</option>
+                        <option>Balder</option>
+                        <option>Gunnar</option>
                     </datalist>
                 </div>
 
@@ -64,35 +67,45 @@
                 <label for="specifyDogType">Specify preferences instead</label>
                 
                 <div class="displayWhenChecked">
+                    <h3>Age:</h3>
+                    <div class="radioButtons">
+                        <div>
+                            <input id="specifyAgePuppy" type="radio" name="specifyAge" value="puppy">
+                            <label for="specifyAgePuppy">Puppy</label>
+                        </div>
+
+                        <div>
+                            <input id="specifyAgeAdult" type="radio" name="specifyAge" value="adult">
+                            <label for="specifyAgeAdult">Adult</label>
+                        </div>
+
+                        <div>
+                            <input id="specifyAgeAny" type="radio" name="specifyAge" value="any">
+                            <label for="specifyAgeAny">Any</label>
+                        </div>
+                    </div>
+
+                    <h3>Gender:</h3>
+                    <div class="radioButtons">
+                        <div>
+                            <input id="specifyGenderMale" type="radio" name="specifyGender" value="male">
+                            <label for="specifyGenderMale">Male</label>
+                        </div>
+
+                        <div>
+                            <input id="specifyGenderFemale" type="radio" name="specifyGender" value="female">
+                            <label for="specifyGenderFemale">Female</label>
+                        </div>
+
+                        <div>
+                            <input id="specifyGenderAny" type="radio" name="specifyGender" value="any">
+                            <label for="specifyGenderAny">Any</label>
+                        </div>
+                    </div>
+
                     <div class="positionLabel">
                         <input id="specifyBreed" type="text" name="specifyBreed" placeholder=" ">
                         <label for="specifyBreed">Breed</label>
-                    </div>
-
-                    <div class="radioButtons">
-                        <h3>Sex</h3>
-
-                        <input id="specifySexMale" type="radio" name="specifySex">
-                        <label for="specifySexMale">Male</label>
-
-                        <input id="specifySexFemale" type="radio" name="specifySex">
-                        <label for="specifySexFemale">Female</label>
-
-                        <input id="specifySexAny" type="radio" name="specifySex">
-                        <label for="specifySexAny">Any</label>
-                    </div>
-
-                    <div class="radioButtons">
-                        <h3>Age</h3>
-
-                        <input id="specifyAgePuppy" type="radio" name="specifyAge">
-                        <label for="specifyAgePuppy">Puppy</label>
-
-                        <input id="specifyAgeAdult" type="radio" name="specifyAge">
-                        <label for="specifyAgeAdult">Adult</label>
-
-                        <input id="specifyAgeAny" type="radio" name="specifyAge">
-                        <label for="specifyAgeAny">Any</label>
                     </div>
 
                     <div class="positionLabel">
@@ -203,5 +216,6 @@
         <div class="copyright">
             <p>Copyright Pawsome Adoption 2023</p>
         </div>
+    </footer>
 </body>
 </html>

@@ -1,6 +1,6 @@
 /* ===== General styling and reset ===== */
 main {
-    font-family: Quicksand, sans-serif;
+    font-family: var(--default-font-family);
 }
 
 main * {
@@ -8,20 +8,16 @@ main * {
 }
 
 h1 {
-    text-align: center;;
+    text-align: center;
 }
 
 h3 {
-    margin-bottom: 0.25rem;
+    margin: 0 0 0.25rem;
 }
 
 fieldset {
     border: 0;
     margin: 2rem 0 3rem;
-}
-
-fieldset.terms {
-    text-align: center;
 }
 
 legend {
@@ -59,9 +55,26 @@ input[type="submit"] {
     border-radius: 15px;
     padding: 1rem;
     width: 100%;
-    background: var(--donate-btn-colour);
+    background: var(--btn-colour-one);
     font-size: 1rem;
     font-weight: 600;
+    cursor: pointer;
+}
+
+
+/* ===== Element-specific styling ===== */
+fieldset.terms {
+    text-align: center;
+}
+
+fieldset.terms a {
+    color: var(--main-colour);
+}
+
+.radioButtons {
+    margin: 0.5rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
 
@@ -79,7 +92,7 @@ textarea:required:valid {
 input:required:invalid + label::after,
 textarea:required:invalid + label::after {
     content: "*";
-    color: var(--donate-btn-colour);
+    color: var(--btn-colour-one);
     margin-left: 3px;
     font-weight: bold;
 }
@@ -101,7 +114,7 @@ textarea:required:valid + label::after {
 .displayToggle:checked ~ .displayWhenChecked {
     display: block;
     background: var(--hover-colour);
-    border: 1px solid #0d4249;
+    border: 1px solid var(--darkblue);
     border-radius: 15px;
     padding: 2rem;
 }
@@ -145,13 +158,18 @@ textarea:required:valid + label::after {
     background: #fff;
 }
 
-/* Note: :placeholder-shown is experimental, but has been supported in major browsers for years */
 .positionLabel input:placeholder-shown ~ label,
 .positionLabel textarea:placeholder-shown ~ label {
+    /* Note: :placeholder-shown is experimental, but has been supported in major browsers for years */
     transform: translate(20%, 75%) scale(1.35);
 }
 
 .positionLabel input:focus ~ label,
 .positionLabel textarea:focus ~ label {
     transform: none;
+}
+
+.positionLabel input::placeholder,
+.positionLabel textarea::placeholder {
+    visibility: hidden; /* Hide any placeholders visually and from screen readers */
 }
