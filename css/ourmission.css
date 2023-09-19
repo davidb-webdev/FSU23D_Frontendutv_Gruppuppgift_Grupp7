@@ -1,6 +1,10 @@
 /* @import url('variables.css'); */
 /* @import url('general.css') */
 
+main * {
+    box-sizing: border-box;
+}
+
 
 
 .container {
@@ -122,12 +126,15 @@ input, select {
 
 }
 
-@media screen and (min-width:992px) {
-
+@media screen and (min-width:880px) {
     .donate-section {
         width: 50%;
+        
     }
+    
+}
 
+@media screen and (min-width:992px) {
 
 
 
