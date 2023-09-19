@@ -1,7 +1,7 @@
 /* CSS Variables */
 
 /* General Colours */
-:root{
+:root {
     --main-colour: #50a5c7;
     --secondary-colour: #000080; 
     --hover-colour: #f3f1ec;
@@ -9,5 +9,16 @@
     --text-colour: #333;
     --secondary-text-colour: #333;
 
+    --darkblue: #0d4249;
+    --lightblue: #c3d9d8;
 }
 
+/* Distances and shapes */
+:root {
+    --default-border-radius: 15px;
+}
+
+/* Font styling */
+:root {
+    --default-font-family: Quicksand, sans-serif;
+}
