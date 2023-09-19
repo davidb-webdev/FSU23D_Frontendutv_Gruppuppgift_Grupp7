@@ -7,6 +7,16 @@
   }
 /* CSS for first section of frontpage */
 
+.section-first, .content-first, .selection-text, .content-third, .box1, .box2, .section-sec
+, .mission-box, .article-parent{
+
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .section-first{
 /* CSS for background image */
     background-image: url(../img/Frontpage-dog-small.jpg);
@@ -17,18 +27,18 @@
     padding-top: 100px;
     padding-bottom: 100px;
 
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     
 }    
 
 .content-first{
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 100%;
 } 
 
@@ -43,10 +53,11 @@
     font-size: 29px;
     text-shadow: 3px 3px 8px white;
     
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: center; */
     justify-content: top;
+    
     
 }
 
@@ -103,10 +114,10 @@
     
     .content-third{
         
-        display: flex;
+        /* display: flex; */
         flex-flow: row wrap;
-        align-items: center;
-        justify-content: center;
+        /* align-items: center;
+        justify-content: center; */
         
         height: 250px;
         width: 100%
@@ -115,10 +126,10 @@
     
     .box1,.box2{
         
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     
     border: solid 3px var(--main-colour);
     border-radius: 10px 10px 10px 10px;
@@ -143,24 +154,24 @@
     
     padding-bottom: 10px;
     
-    display: flex;
+    /* display: flex;
     flex-flow: column wrap;
-    align-items: center;
+    align-items: center; */
     justify-content: top;
 }
 
 .mission-box{
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;    
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
 }
 
 .article-parent{
-    display: flex;
+    /* display: flex;
     flex-flow: row wrap;    
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     
 }
 
@@ -219,7 +230,7 @@
     font-weight: bold;
 }
 .dog-info a{
-    color: var(--btn-colour-one);
+    color: var(--text-colour);
 }
 
 .dog-info img{
@@ -230,8 +241,28 @@
     margin: 5px; 
 }
 .dog-link{
-    margin: 10px;
+    margin: 5px;
+    text-decoration: none;
 }
+.dog-link:hover{
+    color: var(--hover-colour);
+}
+
+.dog-link-head{
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.bold-word{
+    font-weight: bold;
+    color: var(--btn-colour-one);
+}
+
+.dog-info-text{
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
 
 
   /* Media queries */
@@ -241,6 +272,9 @@
     .section-first{
         background-image: url(../img/Frontpage-dog-medium.jpg);
 
+    }
+    .selection-text{
+        font-size: 40px;
     }
 
     .form-parent{
@@ -263,6 +297,11 @@
         background-image: url(../img/Frontpage-dog-large.jpg);
     }
 
+    .selection-text{
+        font-size: 50px;
+    }
+
+    
     .form-parent{
     
         height: 100px;
@@ -307,12 +346,6 @@
 /* NOTES */
 
 /* A lot of flx code is written the same and can be but in the same elements to make it less code */
-
-/* Change font-size based of media */
-
-/* More info on dog info */
-/* add a hover over names on dog-info */
-/* make dog-info picture link */
+/* Check font-size based of media */
 /* figure out good background color on third section */
-/* Fix layout on third section  */
 /* Clean up code in CSS, example, look over all flex and put on same code */
