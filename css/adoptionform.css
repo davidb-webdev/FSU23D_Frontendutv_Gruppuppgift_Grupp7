@@ -62,22 +62,6 @@ input[type="submit"] {
 }
 
 
-/* ===== Element-specific styling ===== */
-fieldset.terms {
-    text-align: center;
-}
-
-fieldset.terms a {
-    color: var(--main-colour);
-}
-
-.radioButtons {
-    margin: 0.5rem 0 1rem;
-    display: flex;
-    justify-content: space-between;
-}
-
-
 /* ===== Focus and validation effects ===== */
 input:focus, textarea:focus {
     outline: none;
@@ -106,35 +90,21 @@ textarea:required:valid + label::after {
 }
 
 
-/* ===== Show/hide on click ===== */
-.displayToggle, .displayWhenChecked {
-    display: none;
+/* ===== Element-specific styling ===== */
+fieldset.terms {
+    text-align: center;
 }
 
-.displayToggle:checked ~ .displayWhenChecked {
-    display: block;
-    background: var(--hover-colour);
-    border: 1px solid var(--darkblue);
-    border-radius: 15px;
-    padding: 2rem;
+fieldset.terms a {
+    color: var(--main-colour);
 }
 
-.displayWhenChecked {
+.radioButtons {
     margin: 0.5rem 0 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 
-.displayToggle + label::before {
-    width: 0.75em;
-    height: auto;
-    content: "▶";
-    display: inline-block;
-    margin-right: 5px;
-    transition: 0.25s all;
-}
-
-.displayToggle:checked + label::before {
-    transform: rotate(0.25turn);
-}
 
 /* ===== "Floating" label inside textfield ===== */
 .positionLabel {
@@ -172,4 +142,35 @@ textarea:required:valid + label::after {
 .positionLabel input::placeholder,
 .positionLabel textarea::placeholder {
     visibility: hidden; /* Hide any placeholders visually and from screen readers */
+}
+
+
+/* ===== Show/hide on click ===== */
+.displayToggle, .displayWhenChecked {
+    display: none;
+}
+
+.displayToggle:checked ~ .displayWhenChecked {
+    display: block;
+    background: var(--hover-colour);
+    border: 1px solid var(--darkblue);
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.displayWhenChecked {
+    margin: 0.5rem 0 1rem;
+}
+
+.displayToggle + label::before {
+    width: 0.75em;
+    height: auto;
+    content: "▶";
+    display: inline-block;
+    margin-right: 5px;
+    transition: 0.25s all;
+}
+
+.displayToggle:checked + label::before {
+    transform: rotate(0.25turn);
 }
