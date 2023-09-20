@@ -1,23 +1,21 @@
-/* @import url('variables.css'); */
+@import url('variables.css');
 /* @import url('general.css') */
 
 main * {
     box-sizing: border-box;
 }
 
-
-
 .container {
-    font-family: 'quicksand';
-    color:#0d4249;
+    font-family: var (--default-font-family);
+    color: var(--text-color);
     
 }
 
 .ourvision-section, .happy-stories-section, #donate-section-container {
    
-    background-color: lightblue;
+    background-color: var(--lightblue);
     border: 2px solid #0d4249;
-    border-radius: 12px;
+    border-radius:var(--default-border-radius);
     margin: 20px;
     padding: 20px;
 
@@ -28,12 +26,16 @@ main * {
 
 }
 
+#donate-section-container {
+    scroll-margin-top: 6.9rem;
+
+}
+
 
 .donate-section, .donate-text-section {
     text-align: center;
-    background-color: lightblue;
     padding-top: 10px;
-    border-radius: 12px;
+    border-radius: var(--default-border-radius);
     margin: 20px;
 }
 
@@ -41,7 +43,7 @@ main * {
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 12px;
+    border-radius: var(--default-border-radius);
 }
 
 .section2-pic, .donate-text-section {
@@ -59,7 +61,11 @@ main * {
 
 .section1-text, .section2-text {
     text-align: center;
+    margin-top: 10px;
+    margin-right: auto;
+    margin-left: auto;
 }   
+
     
 
 .dog-boxes {
@@ -71,23 +77,22 @@ main * {
 .dog-boxes img {
     max-width: 300px;
     height: auto;
-    border-radius: 12px;
+    border-radius: var(--default-border-radius);
 }
-
 
 form button {
     width: 30%;
     padding: 10px;
-    background: #ff735a;
+    background: var(--accent-color);
     font-size: 17px;
-    border: 1px solid black; 
-    border-radius: 10px;
+    border: 2px solid var(--text-color); 
+    border-radius: var(--default-border-radius);
     cursor: pointer;
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
-input, select {
+  input, select {
 
     width: 80%;
     padding: 12px;
@@ -157,7 +162,7 @@ input, select {
 
     .container {
         
-        max-width: 80%;
+        max-width: 85%;
         margin-left: auto;
         margin-right: auto;
         
