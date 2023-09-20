@@ -1,21 +1,19 @@
 /* CSS Variables */
 
-/* General Colours */
+/* General Colors */
 :root {
-    --main-colour: #50a5c7;
-    --secondary-colour: #000080; 
-    --hover-colour: #f3f1ec;
-    --btn-colour-one: #ff735a;
-    --text-colour: #333;
-    --secondary-text-colour: #333;
-
-    --darkblue: #0d4249;
-    --lightblue: #c3d9d8;
+    --main-color: #50a5c7;
+    --secondary-color: #0d4249;
+    --accent-color: #ff735a;
+    --text-color: #333;
+    --secondary-text-color: #f3f1ec;
+    --lightblue: lightblue;
+    --valid: green;
 }
 
 /* Distances and shapes */
 :root {
-    --default-border-radius: 15px;
+    --default-border-radius: 12px;
 }
 
 /* Font styling */
