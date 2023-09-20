@@ -240,6 +240,7 @@ hr {
   display: block;
   margin: auto;
   max-width: 1000px; 
+  font-family: quicksand;
  }
  
  .about-h2 {
@@ -281,7 +282,94 @@ hr {
   font-size: 1.3rem;
 }
  
-   
+/* --------------Previous cases----------------- */
+
+#about-features-3 {
+    width: 100%;
+    min-height: 70vh;
+    display: grid;
+    place-items: center;
+    }
+    
+    .about-wrapper-1{
+      width: 100%;
+      max-width: 1000px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: 20px 0;
+    }
+     .about-wrapper-2 {
+      width: 100%;
+      max-width: 1000px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin-bottom: 20px;
+    }
+    
+    .about-wrapper-1 .case-left {
+      overflow:hidden;
+    }
+    
+    .about-wrapper-1 .case-left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 320px;
+      border-radius: 5px;
+      max-height: 200px;
+    }
+    
+    .about-wrapper-1 .case-right {
+     display: flex;
+     align-items: center;
+    }
+    
+    .case-content {
+      color:#0d4249;
+      font-weight: bold;
+      font-size: 1.3rem;
+      padding: 0px 10px;
+    }
+    .case-right p {
+      font-size: 1rem;
+      color: #5b5b5b;
+    }
+      
+    .previous-case {
+      font-size: 1.3rem;
+      color: #5b5b5b;
+    }
+    .case-name {
+      font-style: italic;
+      color:  #ff735a;
+    }
+    
+    /* case-2 */
+    .about-wrapper-2 .case-left {
+    overflow: hidden;
+    
+    }
+    .about-wrapper-2 .case-left img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      max-width: 320px;
+      border-radius: 5px;
+      max-height: 200px;
+      
+    }
+    
+      
+    .about-wrapper-2 .case-right {
+     display: flex;
+     align-items: center;
+    }
+    
+    
+    .case-right p {
+      font: 1rem;
+      padding-bottom: 15px;
+    }
  
  
 
