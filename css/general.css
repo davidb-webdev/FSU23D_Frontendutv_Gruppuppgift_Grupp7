@@ -201,15 +201,15 @@ footer {
     }
 
     .header-navbar-item a {
+        display: inline-block;
         text-align: center;
-        padding: 10px 15px;
+        padding: 5px 15px;
+        border-radius: 12px;
         text-decoration: none;
     }
 
     .header-navbar-item a:hover, .header-navbar-item a:active {
         background-color: #0d4249;
         color: #f3f1ec;
-        padding: 5px 15px;
-        border-radius: 12px;
     }
 }
