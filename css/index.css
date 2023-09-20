@@ -49,8 +49,6 @@
     
 }
 
-
-
 .mission-box{
     color: white;
 }
@@ -67,7 +65,7 @@
         padding: 10px;
         font-size: 17px;
         border: 1px solid black;
-        border-radius: 10px 0px 0px 10px ;
+        border-radius: 12px 0px 0px 12px ;
         float: left;
         width: 80%;
         background: white
@@ -78,17 +76,17 @@
         float: left;
         width: 20%;
         padding: 10px;
-        background: var(--btn-colour-one);
+        background: var(--accent-color);
         color: black;
         font-size: 17px;
         border: 1px solid black;
         border-left: none; 
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 12px 12px 0px;
         cursor: pointer;
     }
     
     form button:hover {
-        background: var(--hover-colour);
+        background: var(--lightblue);
     }
     
     /* Clear floats */
@@ -107,12 +105,11 @@
         width: 100%
         
     }
-    
     .box1,.box2{
     
-    border: solid 3px var(--main-colour);
-    border-radius: 10px 10px 10px 10px;
-    background-color: var(--main-colour);
+    border: solid 3px var(--main-color);
+    border-radius: var(--default-border-radius);
+    background-color: var(--main-color);
     opacity: .8;
     margin-left: 25px;
     margin-right: 25px;
@@ -129,7 +126,7 @@
 
 /* Css for Our mission / about us */
 .section-sec{
-    background-color: var(--darkblue);
+    background-color: var(--secondary-color);
     
     padding-bottom: 10px;
     
@@ -139,13 +136,12 @@
 
 .learn-more-btn{
     font-weight: bold;
-    color: var(--btn-colour-one);
-
-
+    color: var(--accent-color);
 }
 
+
 .mission-heading{
-    color: var(--btn-colour-one);
+    color: var(--accent-color);
     font-weight: bolder;    
 }
 .article-text{
@@ -160,10 +156,16 @@
 .section-third{ 
     display: none;
 }
+
 .content-third-heading{
     display: flex;
     justify-content: center;
+    color: var(black);
+    font-size: x-large;
     
+}
+.content-sec-third{
+    padding-bottom: 30px;
 }
 
 #dog-container {
@@ -187,7 +189,7 @@
         width: 310px;
         text-align: center;
         padding-top: 10px;
-        border-radius: 12px;}
+        border-radius: var(--default-border-radius);}
 .dog-info p{
     font-weight: bold;
 }
@@ -199,7 +201,7 @@
     border: solid 1px black;
     width: 290px;
     object-fit: contain;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: var(--default-border-radius);
     margin: 5px; 
 }
 .dog-link{
@@ -217,7 +219,7 @@
 
 .bold-word{
     font-weight: bold;
-    color: var(--btn-colour-one);
+    color: var(--accent-color);
 }
 
 .dog-info-text{
@@ -270,7 +272,7 @@
         width: 50%;}
 
     .box1:hover,.box2:hover{
-        background-color:  var(--hover-colour)
+        background-color:  var(--lightblue)
         }
 
     .box1,.box2{
@@ -293,21 +295,9 @@
 
      #dog-container >.dog-info:nth-child(3){
         display: block;} 
+
+    .learn-more-btn:hover{
+        color: var( --lightblue);
     }
 
-        /* fix so that it displays third dog the right way */
-
-     
-     
-
-
-
-    
-
-
-/* NOTES */
-
-/* A lot of flx code is written the same and can be but in the same elements to make it less code */
-/* Check font-size based of media */
-/* figure out good background color on third section */
-/* Clean up code in CSS, example, look over all flex and put on same code */
+    }
