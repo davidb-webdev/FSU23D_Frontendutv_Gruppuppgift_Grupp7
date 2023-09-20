@@ -1,9 +1,9 @@
 form input, .gender-input, #dog-gallary-container, h3, b {
-    color: #0d4249;
+    color: var(--secondary-color);
 }
 
 .bold-word, .info-dog-link {
-    color: #ff735a;
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -12,7 +12,10 @@ form input, .gender-input, #dog-gallary-container, h3, b {
     flex-flow: column wrap;
     align-items: center;
     padding-top: 20px;
-    width: 100%;
+}
+
+#search-dog {
+    padding-left: 25px;
 }
 
 form input {
@@ -23,60 +26,56 @@ form input {
     width: 71%;
 }
 
-form input, .gender-input {
-    float: left;
-    padding: 10px;
-    font-size: 17px;
-    background: white;
+form input, .gender-input, form button {
     border: 1px solid black;
-  }
+    font-size: 17px;
+    padding: 10px;
+    float: left;
+}
 
 .age-input, .breed-input, .gender-input {
     border-radius: 12px 0px 0px 12px;
 }
 
 form button {
-    float: left;
     width: 15%;
-    padding: 10px;
-    background: #ff735a;
-    color: black;
-    font-size: 17px;
-    border: 1px solid black;
+    background: var(--accent-color);
+    color: var(--text-color);
     border-left: none; 
     border-radius: 0px 12px 12px 0px;
     cursor: pointer;
-  }
+}
 
 form button:hover, .info-dog-link:hover {
-    background: #0d4249;
-    color: #f3f1ec;
-  }
+    background: var(--secondary-color);
+    color: var(--secondary-text-color);
+}
 
 #dog-gallary-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px 20px;
-    padding: 20px 0px;
+    padding: 20px 0;
     align-items: center;
     max-width: 1600px;
-    font-family: quicksand;
+}
+
+#dog-gallary-container img, .dog-gallary, .info-dog-link {
+    border-radius: var(--default-border-radius);
 }
 
 #dog-gallary-container img {
     max-width: 100%;
-    border-radius: 12px;
 }
 
 .dog-gallary {
-    background-color: #c3d9d8;
-    border: 2px solid #0d4249;
+    background-color: var(--lightblue);
+    border: 2px solid var(--secondary-color);
     min-height: 400px;
     max-width: 350px;
     text-align: center;
     padding: 16px 16px;
-    border-radius: 12px;
 }
 
 .dog-info {
@@ -87,7 +86,6 @@ form button:hover, .info-dog-link:hover {
 .info-dog-link {
     text-decoration: none;
     padding: 5px 15px;
-    border-radius: 12px;
 }
 
 
@@ -137,24 +135,5 @@ form button:hover, .info-dog-link:hover {
 
     #search-dog {
         padding-top: 20px;
-    }
-    .btn-1, .btn-2 {
-        display: none;
-    }
-
-    .age-input {
-        width: 15%;
-    }
-
-    .breed-input, .gender-input {
-        width: 32%;
-    }
-
-    .breed-input, .gender-input {
-        border-radius: 0;
-    }
-
-    .btn-3 {
-        width: 12%;
     }
 }
