@@ -9,6 +9,7 @@ body {
     margin: 0;
     padding: 0;
     min-height: 100vh; /* make sure footer is always at the bottom */
+    font-family: var(--default-font-family);
 
     display: grid;
     grid-template: 6rem 1fr 10rem / 1fr;
