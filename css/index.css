@@ -26,19 +26,10 @@
 
     padding-top: 100px;
     padding-bottom: 100px;
-
-    /* display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center; */
     
 }    
 
 .content-first{
-    /* display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center; */
     width: 100%;
 } 
 
@@ -53,9 +44,6 @@
     font-size: 29px;
     text-shadow: 3px 3px 8px white;
     
-    /* display: flex;
-    flex-flow: column wrap;
-    align-items: center; */
     justify-content: top;
     
     
@@ -112,12 +100,8 @@
     
     /* CSS for boxes (Adult dogs and puppies) */
     
-    .content-third{
-        
-        /* display: flex; */
-        flex-flow: row wrap;
-        /* align-items: center;
-        justify-content: center; */
+    .content-third{  
+        flex-flow: row wrap; 
         
         height: 250px;
         width: 100%
@@ -125,11 +109,6 @@
     }
     
     .box1,.box2{
-        
-    /* display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    justify-content: center; */
     
     border: solid 3px var(--main-colour);
     border-radius: 10px 10px 10px 10px;
@@ -154,26 +133,9 @@
     
     padding-bottom: 10px;
     
-    /* display: flex;
-    flex-flow: column wrap;
-    align-items: center; */
     justify-content: top;
 }
 
-.mission-box{
-    /* display: flex;
-    flex-flow: row wrap;    
-    align-items: center;
-    justify-content: center; */
-}
-
-.article-parent{
-    /* display: flex;
-    flex-flow: row wrap;    
-    align-items: center;
-    justify-content: center; */
-    
-}
 
 .learn-more-btn{
     font-weight: bold;
