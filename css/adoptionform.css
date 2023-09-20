@@ -1,6 +1,5 @@
 /* ===== General styling and reset ===== */
 main {
-    font-family: var(--default-font-family);
     padding: 1.5rem;
 }
 
@@ -12,6 +11,10 @@ main *::before {
 
 h1 {
     text-align: center;
+}
+
+h2 {
+    margin: 0;
 }
 
 h3 {
@@ -40,8 +43,8 @@ input[type="search"],
 textarea {
     display: block;
     margin: 0.5rem 0 1rem;
-    border: 1px solid #0d4249;
-    border-radius: 12px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--default-border-radius);
     padding: 0.5rem;
     width: 100%;
     font-size: 1rem;
@@ -66,11 +69,11 @@ input[type="radio"] {
 input[type="submit"] {
     display: block;
     margin: 1rem auto;
-    border: 1px solid #0d4249;
-    border-radius: 15px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--default-border-radius);
     padding: 1rem;
     width: 100%;
-    background: var(--btn-colour-one);
+    background: var(--accent-color);
     font-size: 1.25rem;
     font-weight: 600;
     cursor: pointer;
@@ -84,24 +87,24 @@ input[type="submit"]:active {
 /* ===== Focus and validation effects ===== */
 input:focus, textarea:focus {
     outline: none;
-    border-color: var(--main-colour);
-    box-shadow: 0 0 3px var(--main-colour) inset;
+    border-color: var(--main-color);
+    box-shadow: 0 0 3px var(--main-color) inset;
 }
 
 input:required:valid,
 textarea:required:valid {
-    border-color: green;
+    border-color: var(--valid);
 }
 
 input:required:valid:focus,
 textarea:required:valid:focus {
-    box-shadow: 0 0 3px green inset;
+    box-shadow: 0 0 3px var(--valid) inset;
 }
 
 input:required:invalid + label::after,
 textarea:required:invalid + label::after {
     content: "*";
-    color: var(--btn-colour-one);
+    color: var(--accent-color);
     margin-left: 3px;
     font-weight: bold;
 }
@@ -122,7 +125,7 @@ textarea:required:valid + label::after {
 }
 
 .terms a {
-    color: var(--main-colour);
+    color: var(--main-color);
 }
 
 .radioButtons {
@@ -182,9 +185,9 @@ textarea:required:valid + label::after {
 
 .displayToggle:checked ~ .displayWhenChecked {
     display: block;
-    background: var(--hover-colour);
-    border: 1px solid var(--darkblue);
-    border-radius: 15px;
+    background: var(--secondary-text-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--default-border-radius);
     padding: 2rem;
 }
 
@@ -193,7 +196,7 @@ textarea:required:valid + label::after {
 }
 
 .displayToggle + label {
-    color: var(--btn-colour-one);
+    color: var(--accent-color);
     font-weight: bold;
 }
 
@@ -203,7 +206,7 @@ textarea:required:valid + label::after {
     content: "▶";
     display: inline-block;
     margin-right: 5px;
-    color: var(--btn-colour-one);
+    color: var(--accent-color);
     transition: 0.25s all;
 }
 
@@ -218,10 +221,12 @@ textarea:required:valid + label::after {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1rem;
+        row-gap: 3rem;
     }
 
     fieldset {
         grid-column-start: 1;
+        margin-bottom: 0;
     }
 
     .terms {
@@ -246,8 +251,7 @@ textarea:required:valid + label::after {
     .sticky {
         position: sticky;
         top: 6.5rem;
-        background-color: #fff;
-        margin: 4.2rem 0 4rem;
+        margin: 4.2rem 0 1rem;
     }
 }
 
@@ -304,10 +308,4 @@ textarea:required:valid + label::after {
     .terms::before {
         display: none;
     }
-
-    /*fieldset legend {
-        position: relative;
-        width: 150%;
-        left: calc(-50% - 1rem);
-    }*/
 }
