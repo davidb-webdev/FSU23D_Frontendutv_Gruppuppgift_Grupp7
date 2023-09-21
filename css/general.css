@@ -20,15 +20,11 @@ body {
 }
 
 header, .dropdown-btn, .dropdown-content, .dropdown:hover .dropdown-btn, footer, .footer-content, .copyright, .footer-logo {
-    background-color: #50a5c7;
+    background-color: var(--main-color);
 }
 
 .footer-content, .copyright, .icons i, .header-navbar-item a {
-    color: #0d4249;
-}
-
-.dropdown-content a, .footer-content, .copyright, .header-navbar-list, .donate-btn {
-    font-family: Quicksand;
+    color: var(--secondary-color);
 }
 
 header {
@@ -89,7 +85,7 @@ header {
     font-weight: bold;
 }
 
-.dropdown-content a:hover {background-color: #f3f1ec}
+.dropdown-content a:hover {background-color: var(--secondary-text-color)}
 
 main {
     grid-area: generalcontent;
@@ -113,7 +109,7 @@ footer {
 
 .footer-content > section {
     width: 100%;
-    border-bottom: 1px solid #0d4249;
+    border-bottom: 1px solid var(--secondary-color);
     padding: 1rem 0 2rem;
 }
 
@@ -146,12 +142,12 @@ footer {
  @media (min-width: 768px) {
     .donate-btn {
         display: inline;
-        border: 2px solid #0d4249;
-        background-color: #ff735a;
+        border: 2px solid var(--secondary-color);
+        background-color: var(--accent-color);
         font-size: 20px;
         font-weight: bold;
         padding: 10px 10px;
-        border-radius: 12px;
+        border-radius: var(--default-border-radius);
         color: black;
         text-decoration: none;
         margin: 20px;
@@ -204,12 +200,12 @@ footer {
         display: inline-block;
         text-align: center;
         padding: 5px 15px;
-        border-radius: 12px;
+        border-radius: var(--default-border-radius);
         text-decoration: none;
     }
 
     .header-navbar-item a:hover, .header-navbar-item a:active {
-        background-color: #0d4249;
-        color: #f3f1ec;
+        background-color: var(--secondary-color);
+        color: var(--secondary-text-color);
     }
 }
