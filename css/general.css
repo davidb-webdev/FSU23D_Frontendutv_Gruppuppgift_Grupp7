@@ -3,6 +3,13 @@
 
 
 
+/* Reset */
+select {
+    appearance: none; /* remove native styles, mostly for Safari */
+}
+
+
+
 
 /* General styles */
 body {
