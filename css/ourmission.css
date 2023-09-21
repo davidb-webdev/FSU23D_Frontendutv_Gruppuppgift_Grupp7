@@ -80,6 +80,11 @@ main * {
     border-radius: var(--default-border-radius);
 }
 
+.dog-boxes img:hover {
+    transform: scale(1.1); 
+
+}
+
 form button {
     width: 30%;
     padding: 10px;
@@ -92,7 +97,15 @@ form button {
     margin-bottom: 10px;
 }
 
-  input, select {
+
+form button:hover, form button:active {
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+    border: 2px solid var(--secondary-color);
+    transform: scale(1.1);
+}
+
+input, select {
 
     width: 80%;
     padding: 12px;
