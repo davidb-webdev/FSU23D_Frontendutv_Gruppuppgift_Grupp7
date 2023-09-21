@@ -99,12 +99,6 @@ footer {
     grid-area: generalfooter;    
 }
 
-.maxwidth {
-    max-width: 1000px; /* TODO: Adjust max-width */
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .footer-content {
     flex-wrap: wrap;
     text-align: center;
