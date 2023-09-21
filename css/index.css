@@ -20,7 +20,6 @@
 .section-first{
 /* CSS for background image */
     background-image: url(../img/Frontpage-dog-small.jpg);
-    background-color: beige;
     background-size: cover;
     width: 100%;
 
@@ -42,7 +41,7 @@
 .selection-text{
     
     font-size: 29px;
-    text-shadow: 3px 3px 8px white;
+    text-shadow: 3px 3px 8px var(--secondary-text-color);
     
     justify-content: top;
     
@@ -50,7 +49,7 @@
 }
 
 .mission-box{
-    color: white;
+    color: var(--secondary-text-color);
 }
 
 
@@ -183,8 +182,8 @@
     max-width: 300px;}
 
 .dog-info {
-        background-color: #c3d9d8;
-        border: 2px solid #0d4249;
+        background-color: var(--lightblue);
+        border: 2px solid var(--secondary-color);
         min-height: 400px;
         width: 310px;
         text-align: center;
@@ -198,7 +197,6 @@
 }
 
 .dog-info img{
-    border: solid 1px black;
     width: 290px;
     object-fit: contain;
     border-radius: var(--default-border-radius);
