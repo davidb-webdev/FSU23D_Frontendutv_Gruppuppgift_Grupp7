@@ -152,6 +152,12 @@ footer {
         text-decoration: none;
         margin: 20px;
     }
+
+    .donate-btn:hover, .donate-btn:active {
+        background-color: var(--secondary-color);
+        color: var(--secondary-text-color);
+        border: 2px solid var(--accent-color);
+    }
     
     .footer-content {
         display: flex;
