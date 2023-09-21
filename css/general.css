@@ -3,6 +3,13 @@
 
 
 
+/* Reset */
+select {
+    appearance: none; /* remove native styles, mostly for Safari */
+}
+
+
+
 
 /* General styles */
 body {
@@ -25,6 +32,10 @@ header, .dropdown-btn, .dropdown-content, .dropdown:hover .dropdown-btn, footer,
 
 .footer-content, .copyright, .icons i, .header-navbar-item a {
     color: var(--secondary-color);
+}
+
+.icons i:hover {
+    color: var(--secondary-text-color);
 }
 
 header {
@@ -52,7 +63,7 @@ header {
 }
 
 .dropdown-btn {
-    padding: 20px;
+    padding: 30px 20px;
     font-size: 30px;
     border: none;
     cursor: pointer;
@@ -93,12 +104,6 @@ main {
 
 footer {
     grid-area: generalfooter;    
-}
-
-.maxwidth {
-    max-width: 1000px; /* TODO: Adjust max-width */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .footer-content {
@@ -153,10 +158,13 @@ footer {
         margin: 20px;
     }
 
-    .donate-btn:hover, .donate-btn:active {
+    .donate-btn:hover {
         background-color: var(--secondary-color);
         color: var(--secondary-text-color);
-        border: 2px solid var(--accent-color);
+    }
+
+    .donate-btn:active {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5) inset;
     }
     
     .footer-content {
