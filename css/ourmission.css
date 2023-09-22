@@ -8,6 +8,8 @@ main * {
 .container {
     font-family: var (--default-font-family);
     color: var(--text-color);
+    padding-bottom: 20px;
+
     
 }
 
@@ -107,12 +109,13 @@ form button:hover, form button:active {
 }
 
 input, select {
-
+    font-family: 'quicksand';
     width: 80%;
     padding: 12px;
     margin: 10px 0;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #333;
+    
 }
 
 @media screen and (min-width: 820px) {
