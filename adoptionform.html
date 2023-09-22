@@ -40,7 +40,10 @@
     </header>
 
     <main>
-        <h1>Adopt your dog</h1>
+        <header>
+            <h1>Adopt your dog</h1>
+        </header>
+
         <form action="adoptionform.html" method="POST">
             <fieldset class="whichDog">
                 <legend>
@@ -115,11 +118,9 @@
                 </div>
             </fieldset>
 
-            <section class="formDescription">
-                <div class="sticky">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi, ea, cumque sint praesentium accusamus error maxime, esse molestias sapiente aperiam et dicta deleniti quos consequuntur nulla blanditiis voluptate ducimus.
-                </div>
-            </section>
+            <aside class="formDescription">
+                <p class="sticky">Please think carefully about which dog is right for you and your home. The dog's personality, energy level and need for activation are all important factors to take into account before you decide to adopt.</p>
+            </aside>
 
             <fieldset class="aboutYou">
                 <legend>
@@ -132,16 +133,29 @@
                 </div>
 
                 <div class="positionLabel">
-                    <textarea id="aboutInformation" name="aboutInformation" minlength="100" maxlength="3000" placeholder=" " required></textarea>
-                    <label for="aboutInformation">About you (100+ characters)</label>
+                    <textarea id="aboutInformation" name="aboutInformation" maxlength="3000" placeholder=" " required></textarea>
+                    <label for="aboutInformation">Describe yourself and your home</label>
+                </div>
+
+                <div class="positionLabel">
+                    <textarea id="aboutOtherPets" name="aboutOtherPets"  maxlength="3000" placeholder=" " required></textarea>
+                    <label for="aboutOtherPets">Do you have any other pets?</label>
+                </div>
+
+                <div class="positionLabel">
+                    <textarea id="aboutWork" name="aboutWork" maxlength="3000" placeholder=" " required></textarea>
+                    <label for="aboutWork">Do you work/study?</label>
+                </div>
+
+                <div class="positionLabel">
+                    <textarea id="aboutDogExperience" name="aboutDogExperience" maxlength="3000" placeholder=" " required></textarea>
+                    <label for="aboutDogExperience">Any previous dog experience?</label>
                 </div>
             </fieldset>
 
-            <section class="formDescription">
-                <div class="sticky">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi, ea, cumque sint praesentium accusamus error maxime, esse molestias sapiente aperiam et dicta deleniti quos consequuntur nulla blanditiis voluptate ducimus.
-                </div>
-            </section>
+            <aside class="formDescription">
+                <p class="sticky">It is important to us that all dogs find the right forever home. That's why we want to know a little bit about you &ndash; to make sure that you and your future dog will be a perfect match.</p>
+            </aside>
 
             <fieldset class="contactInformation">
                 <legend>
@@ -184,11 +198,9 @@
                 </div>
             </fieldset>
 
-            <section class="formDescription">
-                <div class="sticky">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae nisi, ea, cumque sint praesentium accusamus error maxime, esse molestias sapiente aperiam et dicta deleniti quos consequuntur nulla blanditiis voluptate ducimus.
-                </div>
-            </section>
+            <aside class="formDescription">
+                <p class="sticky">After reviewing your application, we will contact you by phone or e-mail, usually within a week. Please check that all information provided is correct before submitting your application.</p>
+            </aside>
 
             <fieldset class="terms">
                 <input type="checkbox" id="acceptTerms" name="acceptTerms" required>
@@ -196,7 +208,7 @@
                     I accept the <a href="#">terms</a>
                 </label>
 
-                <input type="submit">
+                <input type="submit" value="Send application">
             </fieldset>
         </form>
     </main>
