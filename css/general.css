@@ -26,7 +26,7 @@ body {
         "generalfooter";
 }
 
-header, .dropdown-btn, .dropdown-content, .dropdown:hover .dropdown-btn, footer, .footer-content, .copyright, .footer-logo {
+body > header, .dropdown-btn, .dropdown-content, .dropdown:hover .dropdown-btn, footer, .footer-content, .copyright, .footer-logo {
     background-color: var(--main-color);
 }
 
@@ -38,7 +38,7 @@ header, .dropdown-btn, .dropdown-content, .dropdown:hover .dropdown-btn, footer,
     color: var(--secondary-text-color);
 }
 
-header {
+body > header {
     grid-area: generalheader;
     display: flex;
     justify-content: space-between;
