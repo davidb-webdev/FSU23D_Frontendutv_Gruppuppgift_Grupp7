@@ -106,10 +106,6 @@ form button:hover, .info-dog-link:hover {
         width: 80%;
     }
 
-   .btn-1, .btn-2 {
-        display: none;
-    }
-
     .age-input {
         width: 15%;
     }
@@ -127,7 +123,7 @@ form button:hover, .info-dog-link:hover {
         border-right: none;
     }
 
-    .btn-3 {
+    .btn-form {
         width: 12%;
     }
 }
