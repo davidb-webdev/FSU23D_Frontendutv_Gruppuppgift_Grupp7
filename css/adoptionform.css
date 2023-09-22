@@ -174,7 +174,7 @@ textarea:required:valid + label::after {
 
 .positionLabel input::placeholder,
 .positionLabel textarea::placeholder {
-    visibility: hidden; /* Hide any placeholders visually and from screen readers */
+    visibility: hidden; /* hide any placeholders visually and from screen readers */
 }
 
 
@@ -255,7 +255,8 @@ textarea:required:valid + label::after {
     .sticky {
         position: sticky;
         top: 6.5rem;
-        margin: 4.2rem 0 1rem;
+        margin: 4.2rem 0 0;
+        padding: 0 0 1rem;
     }
 }
 
