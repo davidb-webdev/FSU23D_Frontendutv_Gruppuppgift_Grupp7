@@ -8,7 +8,7 @@ main * {
 .container {
     font-family: var (--default-font-family);
     color: var(--text-color);
-    
+    padding-bottom: 20px;
 }
 
 .ourvision-section, .happy-stories-section, #donate-section-container {
@@ -18,19 +18,15 @@ main * {
     border-radius:var(--default-border-radius);
     margin: 20px;
     padding: 20px;
-
 }
 
 .happy-stories-section, #donate-section-container { 
     text-align: center;
-
 }
 
 #donate-section-container {
     scroll-margin-top: 6.9rem;
-
 }
-
 
 .donate-section, .donate-text-section {
     text-align: center;
@@ -42,6 +38,7 @@ main * {
 .ourvision-section img {
     max-width: 100%;
     height: 100%;
+    max-height: 450px;
     object-fit: cover;
     border-radius: var(--default-border-radius);
 }
@@ -57,16 +54,12 @@ main * {
     margin: 20px;
 } 
 
-
-
 .section1-text, .section2-text {
     text-align: center;
     margin-top: 10px;
     margin-right: auto;
     margin-left: auto;
 }   
-
-    
 
 .dog-boxes {
     display: flex;
@@ -81,8 +74,7 @@ main * {
 }
 
 .dog-boxes img:hover {
-    transform: scale(1.1); 
-
+    transform: scale(1.03); 
 }
 
 form button {
@@ -97,7 +89,6 @@ form button {
     margin-bottom: 10px;
 }
 
-
 form button:hover, form button:active {
     background-color: var(--secondary-color);
     color: var(--secondary-text-color);
@@ -106,12 +97,12 @@ form button:hover, form button:active {
 }
 
 input, select {
-
+    font-family: 'quicksand';
     width: 80%;
     padding: 12px;
     margin: 10px 0;
-    border-radius: 5px;
-    border: 1px solid #333;
+    border-radius: 10px;
+    border: 1px solid #333;  
 }
 
 @media screen and (min-width: 820px) {
@@ -138,34 +129,24 @@ input, select {
         display:block;
         flex: 1;
         margin: 20px;
-        padding: 20px;
-        
+        padding: 20px;  
     }
-
         
     .more-info-text{
         display: none;
     }
-
-
 }
-
 @media screen and (min-width:992px) {
-
 
     .container {
         
         max-width: 90%;
         margin-left: auto;
-        margin-right: auto;
-        
+        margin-right: auto;  
     }
-
 }
 
-
 @media screen and (min-width:1200px) {
-
 
     .more-info-text {
         display: block;
@@ -177,8 +158,6 @@ input, select {
         
         max-width: 85%;
         margin-left: auto;
-        margin-right: auto;
-        
+        margin-right: auto;  
     }
-
 }
