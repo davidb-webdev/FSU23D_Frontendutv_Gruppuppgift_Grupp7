@@ -39,20 +39,42 @@
     </header>
 
     <main>
-        <div id="search-container">
+        <div id="search-container1">
             <form role="search" id="search-dog" action="dogsavailable.html">
+                <div class="age-container">
                     <input name="age" class="age-input" type="number" placeholder="Age" min="0" max="15">
                     <button type="submit" class="btn-1"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="breed-container"> 
                     <input name="breed" class="breed-input" type="text" placeholder="Breed">
                     <button type="submit" class="btn-2"><i class="fa fa-search"></i></button>
+                </div>   
+                <div class="gender-container">
                     <select name="gender" class="gender-input">
                         <option value="choose-gender">Choose gender</option>
                         <option value="female">Female</option>
                         <option value="male">Male</option>
                     </select>
                     <button type="submit" class="btn-3"><i class="fa fa-search"></i></button>
+                </div>
             </form>
         </div>
+    
+        <div id="search-container2">
+            <form role="search" id="search-dog" action="dogsavailable.html">
+                <input name="age" class="age-input" type="number" placeholder="Age" min="0" max="15">
+                <button type="submit" class="btn-1"><i class="fa fa-search"></i></button>
+                <input name="breed" class="breed-input" type="text" placeholder="Breed">
+                <button type="submit" class="btn-2"><i class="fa fa-search"></i></button> 
+                <select name="gender" class="gender-input">
+                    <option value="choose-gender">Choose gender</option>
+                    <option value="female">Female</option>
+                    <option value="male">Male</option>
+                </select>
+                    <button type="submit" class="btn-3"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+
         <div id="dog-gallary-container">
             <section class="dog-gallary">
                 <img src="img/english-bulldog-562723_640.jpg" alt="English bulldog playing with a yellow ball">
@@ -63,8 +85,8 @@
                 <div class="dog-info">
                     <b>About:</b>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
-                    <a class="info-dog-link" href="#">Learn more...</a>
-                </section>
+                <a class="info-dog-link" href="#">Learn more...</a>
+            </section>
             <section class="dog-gallary">
                 <img src="img/puppy-1903313_640.jpg" alt="Golden Retriver puppy on a dock">
                 <h3>Gunnar</h3>
@@ -95,8 +117,7 @@
                 <div><span class="bold-word">Gender:</span> <i class="fa-solid fa-venus" style="color: black"></i></div>
                 <div class="dog-info">
                     <b>About:</b>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>
-                    <a class="info-dog-link" href="#">Learn more...</a>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore cupiditate molestias sapiente vero eligendi assumenda accusantium expedita consequatur nemo voluptas? Sit ea iusto repellat et, officiis veniam sequi commodi voluptatum!</div>                        <a class="info-dog-link" href="#">Learn more...</a>
             </section>
             <section class="dog-gallary">
                 <img src="img/dog-5340892_640.jpg" alt="Grey dog with in the grass">
